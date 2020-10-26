@@ -9,7 +9,7 @@ module.exports=override(
 
     // 添加别名
     useBabelRc({
-        '@':path.join(__dirname,'./src'),
+        '@':path.join(__dirname,'./src/'),
     }),
 
     // 按需加载antd-mobile
