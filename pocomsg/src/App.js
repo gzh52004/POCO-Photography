@@ -45,7 +45,8 @@ let addMenu=({key})=>{
           </Menu>
         </Sider>
         <Layout className="site-layout">
-          <Header className="site-layout-background" style={{ padding: 0 }}>
+                <Header className="site-layout-background" style={{ padding: 0 }}>
+                <h1 style={{color:"#ccc",fontSize:22,}}>POCO-后台</h1>
             {/* {React.createElement(this.state.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
               className: 'trigger',
               onClick: this.toggle,
@@ -69,7 +70,7 @@ let addMenu=({key})=>{
           </Content>
         </Layout>
       </Layout>
-      <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+      <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UEDE</Footer>
     </div>
   );
 }
