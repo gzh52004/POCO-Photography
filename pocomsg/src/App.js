@@ -70,11 +70,7 @@ let addMenu=({key})=>{
           </Content>
         </Layout>
       </Layout>
-<<<<<<< HEAD
-      <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED A</Footer>
-=======
       <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UEDE</Footer>
->>>>>>> f1421739db751da872db28af6462319656079b28
     </div>
   );
 }
