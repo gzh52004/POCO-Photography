@@ -1,5 +1,6 @@
 import React from 'react'
 import { Drawer, List, NavBar, Icon } from 'antd-mobile';
+import './Header.scss';
 class App1 extends React.Component {
     state = {
       open: false,
@@ -33,6 +34,7 @@ class App1 extends React.Component {
           sidebar={sidebar}
           open={this.state.open}
           onOpenChange={this.onOpenChange}
+          position={'left'}
         >
           Click upper-left corner
         </Drawer>
