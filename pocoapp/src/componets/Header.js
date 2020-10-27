@@ -16,7 +16,7 @@ class App1 extends React.Component {
         <div>
           登录、注册
         </div>
-        <div>
+      
           <ul>
             <li>首页</li>
             <li>作品</li>
@@ -26,12 +26,12 @@ class App1 extends React.Component {
             <li>极限摄影</li>
             <li>POCO认证</li>
           </ul>
-        </div>
+        
      </List.Item>
-    </List>;
+    </List>
 
     return (<div>
-      <NavBar icon={<Icon type="ellipsis" />} onLeftClick={this.onOpenChange}>Basic</NavBar>
+      <NavBar style={{backgroundColor:"#000",fontSize:".14rem"}} icon={<Icon type="ellipsis" />} onLeftClick={this.onOpenChange}>POCO摄影</NavBar>
       <Drawer
         className="my-drawer"
         style={{ minHeight: document.documentElement.clientHeight }}
@@ -41,9 +41,10 @@ class App1 extends React.Component {
         open={this.state.open}
         onOpenChange={this.onOpenChange}
       >
-        Click upper-left corner
+       rrr
       </Drawer>
     </div>);
+    
   }
 }
 

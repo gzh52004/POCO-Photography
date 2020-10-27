@@ -17,3 +17,6 @@
 .am-drawer-sidebar {
   width: 3.5rem;
 }
+.am-navbar-title {
+  font-size: 14px;
+}
