@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import { Drawer, List, NavBar, Icon } from 'antd-mobile';
+// import logo from './logo.svg';
+// import { Drawer, List, NavBar, Icon } from 'antd-mobile';
 import './App.css';
 import App1 from './componets/Header'
 function App() {
