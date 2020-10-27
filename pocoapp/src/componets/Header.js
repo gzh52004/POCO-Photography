@@ -16,7 +16,7 @@ class App1 extends React.Component {
       </List>);
   
       return (<div>
-        <NavBar icon={<Icon type="ellipsis" />} onLeftClick={this.onOpenChange}>POCO摄影</NavBar>
+        <NavBar style={{backgroundColor:'#000'}} icon={<Icon type="ellipsis" />} onLeftClick={this.onOpenChange}>POCO摄影</NavBar>
         <Drawer
           className="my-drawer"
           style={{ minHeight: document.documentElement.clientHeight }}
