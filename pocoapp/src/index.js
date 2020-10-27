@@ -5,7 +5,7 @@ import App from './App';
 import './assets/css/reset.css';
 import './assets/css/buju.css';
 import {HashRouter} from 'react-router-dom';
-import reportWebVitals from './reportWebVitals';
+// import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <HashRouter> 
