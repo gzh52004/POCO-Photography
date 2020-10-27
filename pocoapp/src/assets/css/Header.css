@@ -1,0 +1,19 @@
+.sidebox {
+  width: 5rem !important;
+  height: 2rem;
+  background-color: #303031;
+}
+.placeholder {
+  background-color: #ebebef;
+  color: #bbb;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+}
+.am-drawer.am-drawer-left .am-drawer-draghandle {
+  width: 0;
+}
+.am-drawer-sidebar {
+  width: 3.5rem;
+}
