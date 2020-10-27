@@ -1,9 +1,8 @@
 import React from 'react'
 import { Drawer, List, NavBar, Icon } from 'antd-mobile';
-import NavList from './NavList';
 class App1 extends React.Component {
     state = {
-      open: true,
+      open: false,
     }
     onOpenChange = (...args) => {
       console.log(args);
@@ -12,8 +11,16 @@ class App1 extends React.Component {
     render() {
       // fix in codepen
       const sidebar = (
-      <NavList>
-      </NavList>);
+      <List>
+          <List.Item style={{width:300,backgroundColor:"#666",height:50}}>登录\注册</List.Item>
+          <List.Item style={{width:300,backgroundColor:"#666",height:50}}>登录\注册</List.Item>
+          <List.Item style={{width:300,backgroundColor:"#666",height:50}}>登录\注册</List.Item>
+          <List.Item style={{width:300,backgroundColor:"#666",height:50}}>登录\注册</List.Item>
+          <List.Item style={{width:300,backgroundColor:"#666",height:50}}>登录\注册</List.Item>
+          <List.Item style={{width:300,backgroundColor:"#666",height:50}}>登录\注册</List.Item>
+          <List.Item style={{width:300,backgroundColor:"#666",height:50}}>登录\注册</List.Item>
+          <List.Item style={{width:300,backgroundColor:"#666",height:50}}>登录\注册</List.Item>
+      </List>);
   
       return (
       <div>
