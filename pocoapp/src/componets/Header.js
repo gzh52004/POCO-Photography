@@ -1,5 +1,6 @@
 import React from 'react'
 import { Drawer, List, NavBar, Icon } from 'antd-mobile';
+import NavList from './NavList';
 class App1 extends React.Component {
     state = {
       open: true,
@@ -10,12 +11,12 @@ class App1 extends React.Component {
     }
     render() {
       // fix in codepen
-      const sidebar = (<List>
-          <div style={{width:300,backgroundColor:"#666",height:50}}>登录\注册</div>
-
-      </List>);
+      const sidebar = (
+      <NavList>
+      </NavList>);
   
-      return (<div>
+      return (
+      <div>
         <NavBar style={{backgroundColor:'#000'}} icon={<Icon type="ellipsis" />} onLeftClick={this.onOpenChange}>POCO摄影</NavBar>
         <Drawer
           className="my-drawer"
