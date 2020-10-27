@@ -13,14 +13,14 @@ class App1 extends React.Component {
       // fix in codepen
       const sidebar = (
       <List>
-          <List.Item style={{width:300,backgroundColor:"#666",height:50}}>登录\注册</List.Item>
-          <List.Item style={{width:300,backgroundColor:"#666",height:50}}>登录\注册</List.Item>
-          <List.Item style={{width:300,backgroundColor:"#666",height:50}}>登录\注册</List.Item>
-          <List.Item style={{width:300,backgroundColor:"#666",height:50}}>登录\注册</List.Item>
-          <List.Item style={{width:300,backgroundColor:"#666",height:50}}>登录\注册</List.Item>
-          <List.Item style={{width:300,backgroundColor:"#666",height:50}}>登录\注册</List.Item>
-          <List.Item style={{width:300,backgroundColor:"#666",height:50}}>登录\注册</List.Item>
-          <List.Item style={{width:300,backgroundColor:"#666",height:50}}>登录\注册</List.Item>
+          <List.Item style={{width:300,backgroundColor:"#303031",height:50}}>登录\注册</List.Item>
+          <List.Item style={{width:300,backgroundColor:"#303031",height:50}}>登录\注册</List.Item>
+          <List.Item style={{width:300,backgroundColor:"#303031",height:50}}>登录\注册</List.Item>
+          <List.Item style={{width:300,backgroundColor:"#303031",height:50}}>登录\注册</List.Item>
+          <List.Item style={{width:300,backgroundColor:"#303031",height:50}}>登录\注册</List.Item>
+          <List.Item style={{width:300,backgroundColor:"#303031",height:50}}>登录\注册</List.Item>
+          <List.Item style={{width:300,backgroundColor:"#303031",height:50}}>登录\注册</List.Item>
+          <List.Item style={{width:300,backgroundColor:"#303031",height:50}}>登录\注册</List.Item>
       </List>);
   
       return (
