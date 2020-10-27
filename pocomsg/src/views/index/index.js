@@ -1,15 +1,11 @@
 import React from 'react';
-import { Calendar } from 'antd';
 
 function Index(){
-//     function onPanelChange(value, mode) {
-//  console.log(value.format('YYYY-MM-DD'), mode);
-// }
     return(
         <div>
-            <Calendar></Calendar>
+            <h1>欢迎进入后台管理系统</h1>
         </div>
     )
 }
 
-export default Index
+export default Index    
