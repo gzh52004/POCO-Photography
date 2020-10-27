@@ -1,0 +1,22 @@
+html,
+body {
+  height: 100%;
+}
+.header {
+  width: 100%;
+  height: 0.88rem;
+  position: absolute;
+  top: 0;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  background-color: blanchedalmond;
+  overflow: auto;
+}
+.content-con {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0.88rem;
+}

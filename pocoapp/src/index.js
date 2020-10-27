@@ -2,9 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import './assets/css/reset.css';
+import './assets/css/buju.css';
+import {HashRouter} from 'react-router-dom';
+// import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-    <App />,
+  <HashRouter> 
+    <App />
+  </HashRouter>,
   document.getElementById('root')
 );
 

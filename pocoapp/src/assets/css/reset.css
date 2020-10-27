@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+/* 重置样式 */
+
+/* 不用通配符* */
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+/* 1.页面文本 */
+body {
+  font-size: 16px;
+  font-family: "微软雅黑";
+}
+
+/* 2.h1-h2 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* 3.列表样式 */
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+/* 4.倾斜 */
+em,
+i {
+  font-style: normal;
+}
+
+/* 5.加粗 */
+strong,
+b {
+  font-weight: normal;
+}
+
+/* 6.下划线 */
+a,
+u {
+  text-decoration: none;
+}
+
+/* 7.去边框 */
+img,
+fieldset {
+  border: none;
+}
+
+/* 8.转为块状 */
+img {
+  display: block;
+}
+
+/* 9.输入框聚焦 */
+input {
+  outline: none;
+}
+
+/* 10.禁止拖拽 */
+textarea {
+  resize: none;
+}
+
+/* 封装 */
+/* 左浮动 */
+.fl {
+  float: left;
+}
+/* 右浮动 */
+.fr {
+  float: right;
+}
+/* 去边框 */
+.bd_none {
+  border: none !important;
+}
+/* 去背景 */
+.bg_none {
+  background: none !important;
+}
+/* 文本溢出 */
+.text_ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* 怪异盒模型 */
+* {
+  box-sizing: border-box;
+}
+/* 万能清除法 */
+.clear_fix:after {
+  content: "";
+  clear: both;
+  height: 0;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* 兼容 */
+.clear_fix {
+  zoom: 1;
+}

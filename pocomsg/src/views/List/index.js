@@ -1,72 +1,50 @@
 import React from 'react';
-import { Table } from 'antd';
+import { Table, Button} from 'antd';
 
 function List() {
     const columns = [
         {
-          title: 'Full Name',
-          width: 100,
+          title: 'id',
+          width: 20,
+          dataIndex: 'id',
+          key: 'id',
+          fixed: 'left',
+        },
+        {
+          title: '作者名字',
+          width: 30,
           dataIndex: 'name',
           key: 'name',
           fixed: 'left',
         },
         {
-          title: 'Age',
-          width: 100,
-          dataIndex: 'age',
-          key: 'age',
-          fixed: 'left',
-        },
-        {
-          title: 'Column 1',
+          title: '图片',
           dataIndex: 'address',
           key: '1',
-          width: 150,
+          width: 100,
         },
         {
-          title: 'Column 2',
+          title: '内容',
           dataIndex: 'address',
           key: '2',
-          width: 150,
+          width: 100,
         },
+       
+      //  Action
         {
-          title: 'Column 3',
-          dataIndex: 'address',
-          key: '3',
-          width: 150,
-        },
-        {
-          title: 'Column 4',
-          dataIndex: 'address',
-          key: '4',
-          width: 150,
-        },
-        {
-          title: 'Column 5',
-          dataIndex: 'address',
-          key: '5',
-          width: 150,
-        },
-        {
-          title: 'Column 6',
-          dataIndex: 'address',
-          key: '6',
-          width: 150,
-        },
-        {
-          title: 'Column 7',
-          dataIndex: 'address',
-          key: '7',
-          width: 150,
-        },
-        { title: 'Column 8', dataIndex: 'address', key: '8' },
-        {
-          title: 'Action',
+          title: '',
           key: 'operation',
           fixed: 'right',
-          width: 100,
-          render: () => <a>action</a>,
-        },
+          width: 25,
+          render: () => <Button danger>编辑</Button>,
+        }, {
+          title: '',
+          key: 'operation',
+          fixed: 'right',
+          width: 25,
+          render: () => <Button danger>删除</Button>,
+        }
+        
       ];
       
       const data = [];
@@ -74,13 +52,13 @@ function List() {
         data.push({
           key: i,
           name: `Edrward ${i}`,
-          age: 32,
+          id: i+1,
           address: `London Park no. ${i}`,
         });
       }
     return (
         <div>
-            <Table columns={columns} dataSource={data} scroll={{ x: 1500, y: 500 }} />
+            <Table columns={columns} dataSource={data} scroll={{ x: 1000, y: 500 }} />
         </div>
     )
 }
