@@ -2,7 +2,7 @@ import React from 'react';
 
 function User(){
     return(
-        <div>User</div>
+        <div>User 用户模块</div>
     )
 }
 
