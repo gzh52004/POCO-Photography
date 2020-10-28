@@ -1,15 +1,10 @@
 import React from 'react';
-import Header from '../../componets/Header';
+import Header from '../../componets/Home/Header';
 import { Carousel, WingBlank } from 'antd-mobile';
 
 class Home extends React.Component {
   state = {
-    data: [
-        '1',
-        '2',
-        '3',
-        '4'
-    ],
+    data: ['73/2019/0122/20/15481585504832281_64925705', '45/2018/0904/10/15360287056698622_64925705', '69/2019/0911/14/15681827915278859_200478990','64/2018/1213/14/15446824782201330_200478990'],
     imgHeight: 176,
   }
   componentDidMount() {

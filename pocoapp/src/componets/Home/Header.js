@@ -1,6 +1,6 @@
 import React from 'react'
 import { Drawer, List, NavBar, Icon } from 'antd-mobile';
-import '../assets/css/Header.css';
+import '../../assets/css/Header.css';
 class App1 extends React.Component {
   state = {
     open: false,
