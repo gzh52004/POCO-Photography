@@ -27,7 +27,7 @@ class App1 extends React.Component {
       </ul>
       <div className="listfooter">
         <span className="listfooterImg"></span>
-        <span>></span>
+        <span>&gt;</span>
         </div>
     </List>);
 
