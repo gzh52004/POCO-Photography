@@ -1,3 +1,8 @@
 .my-list .spe .am-list-extra {
     flex-basis: initial;
 }
+.am-list-item .am-list-line .am-list-content{
+    padding: 13px 12px;
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+}
