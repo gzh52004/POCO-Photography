@@ -4,14 +4,19 @@ import { Carousel, WingBlank } from 'antd-mobile';
 
 class Home extends React.Component {
   state = {
-    data: ['1', '2', '3'],
+    data: [
+        '1',
+        '2',
+        '3',
+        '4'
+    ],
     imgHeight: 176,
   }
   componentDidMount() {
     // simulate img loading
     setTimeout(() => {
       this.setState({
-        data: ['AiyWuByWklrrUDlFignR', 'TekJlZRVCjLFexlOCuWn', 'IJOtIlfsYdTyaDTRVrLI'],
+        data: ['73/2019/0122/20/15481585504832281_64925705', '45/2018/0904/10/15360287056698622_64925705', '69/2019/0911/14/15681827915278859_200478990','64/2018/1213/14/15446824782201330_200478990'],
       });
     }, 100);
   }
@@ -38,7 +43,7 @@ class Home extends React.Component {
                                 style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
                                 >
                                 <img
-                                    src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
+                                    src={`https://pic3.pocoimg.cn/image/poco/works/${val}.jpg`}
                                     alt=""
                                     style={{ width: '100%', verticalAlign: 'top' }}
                                     onLoad={() => {
