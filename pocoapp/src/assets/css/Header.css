@@ -1,25 +1,39 @@
-.sidebox {
+/* .sidebox {
   width: 5rem !important;
   height: 2rem;
   background-color: #303031;
-}
-.placeholder {
+} */
+/* .placeholder {
   background-color: #ebebef;
   color: #bbb;
   text-align: center;
   height: 30px;
   line-height: 30px;
   width: 100%;
-}
+} */
 .am-drawer.am-drawer-left .am-drawer-draghandle {
   width: 0;
 }
 .am-drawer-sidebar {
-  width: 3.5rem;
+  width: 6.375rem;
 }
 .am-navbar-title {
-  font-size: 14px;
+  font-size: 18px;
 }
 .am-list-item .am-list-line {
   align-self: unset;
+}
+/* .my-drawer {
+  position: relative;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+} */
+.my-drawer .am-drawer-sidebar {
+  background-color: #303031;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.my-drawer .am-list-item{
+  background-color: #303031;
+  color: #ffffff;
 }
