@@ -20,3 +20,6 @@
 .am-navbar-title {
   font-size: 14px;
 }
+.am-list-item .am-list-line {
+  align-self: unset;
+}
