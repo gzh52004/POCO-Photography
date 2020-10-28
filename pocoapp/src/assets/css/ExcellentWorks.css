@@ -1,0 +1,56 @@
+.my-list .spe .am-list-extra {
+    flex-basis: initial;
+}
+.recom{
+    /* padding: 13px 12px; */
+    border: none;
+}
+.am-list-item .am-list-line .am-list-content {
+    flex: 1 1;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: left;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+/* 照片盒子 */
+.am-list-item .am-list-thumb{
+    width: 1.312rem;
+    height: 1.312rem;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+    background: rgb(238, 238, 238);
+}
+/* 照片 */
+.am-list-item img {
+    opacity: 1;
+    display: block;
+    margin-left: auto;
+    height: auto;
+    width: 100%;
+    margin-top: 0px;
+}
+/* 右侧描述盒子 */
+.am-list-item .am-list-line .am-list-content {
+    flex: 1;
+    padding: 3px 0 0 10px;
+}
+/* 右侧描述 */
+.am-list-item .am-list-line .am-list-brief {
+    font-size: 15px;
+    color: #333;
+    height: 44px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /* 强制两行溢出省略未生效 */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

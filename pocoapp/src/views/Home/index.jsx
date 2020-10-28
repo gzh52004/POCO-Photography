@@ -18,6 +18,8 @@ class Home extends React.Component {
                         <Banner />
                         <SmallNav />
                         <Recommend />
+                        <Photographer />
+                        <DecorationWorks />
                     </div>
                 </div>
             </div>
