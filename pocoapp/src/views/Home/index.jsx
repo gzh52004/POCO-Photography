@@ -1,22 +1,25 @@
 import React from 'react';
-import Header from '../../componets/Header';
+import Header from '../../componets/Home/Header';
+import Banner from '../../componets/Home/Banner';
 
-
-function Home(){
-    return(
+class Home extends React.Component {
+  
+  render() {
+    return (
         <div>
             <div>
-           <div className="header">
-                <Header></Header>
-           </div>
-            <div className="content">
-                <div className="content-con">
-                        1
+                <div className="header">
+                    <Header></Header>
+                </div>
+                <div className="content">
+                    <div className="content-con">
+                        <Banner />
+                    </div>
                 </div>
             </div>
-            </div>
         </div>
-    )
+    );
+  }
 }
 
-export default Home
+export default Home;
