@@ -3,6 +3,8 @@ import Header from '../../componets/Home/Header';
 import Banner from '../../componets/Home/Banner';
 import SmallNav from '../../componets/Home/SmallNav';
 import Recommend from '../../componets/Home/Recommend';
+import Photographer from '../../componets/Home/Photographer';
+import ExcellentWorks from '../../componets/Home/ExcellentWorks'
 
 class Home extends React.Component {
   
@@ -18,6 +20,8 @@ class Home extends React.Component {
                         <Banner />
                         <SmallNav />
                         <Recommend />
+                        <Photographer />
+                        <ExcellentWorks />
                     </div>
                 </div>
             </div>

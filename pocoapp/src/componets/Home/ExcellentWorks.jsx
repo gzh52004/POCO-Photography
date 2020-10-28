@@ -1,6 +1,6 @@
 import React from 'react';
 import { List } from 'antd-mobile';
-import '../../assets/css/Recommend.css';
+import '../../assets/css/ExcellentWorks.css';
 
 const Item = List.Item;
 const Brief = Item.Brief;
@@ -19,7 +19,7 @@ const Brief = Item.Brief;
 //     }
 // ];
 
-class Recommend extends React.Component {
+class ExcellentWorks extends React.Component {
   state = {
     disabled: false,
   }
@@ -28,7 +28,7 @@ class Recommend extends React.Component {
     return (
     <div>
         <List className="my-list">
-            <Item>热门推荐</Item>
+            <Item>勋章作品</Item>
             <Item align="top" thumb="https://pic3.pocoimg.cn/image/poco/works/68/2020/0409/09/15863966894205061_201318911.jpg?imageView2/1/w/240/h/240/q/95&" multipleLine>
             <Brief>摄影师私藏的8个拍摄道具：你也可以拍摄出杂志感大片</Brief>
             </Item>
@@ -43,4 +43,4 @@ class Recommend extends React.Component {
   }
 }
 
-export default Recommend;
+export default ExcellentWorks;
