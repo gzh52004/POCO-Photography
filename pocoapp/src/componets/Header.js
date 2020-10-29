@@ -24,7 +24,7 @@ class App1 extends React.Component {
             <li>摄影技巧</li>
             <li>对话</li>
             <li>极限摄影</li>
-            <li>POCO认证</li>
+            <li>POCO认证 </li>
           </ul>
         
      </List.Item>
