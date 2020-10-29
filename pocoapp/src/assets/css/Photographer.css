@@ -98,9 +98,9 @@
     text-overflow: ellipsis;
 }
 /* 热门摄影师的作品展示 */
-.list{
+/* .list{
     display: flex;
-}
+} */
 .shuiyin{
     background: url('../data/HomeData/photographer/shuiyin.png') no-repeat center center #eee;
     background-size: 0.862rem;

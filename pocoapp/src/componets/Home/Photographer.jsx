@@ -48,7 +48,7 @@ const Photographer = () => (
             <a className="shuiyin"></a>
           </ul>
         </div>
-        <Grid data={data} columnNum={3} itemStyle={{ width:'33.33%', background: '#ffffff' }} hasLine={false} square={false} />
+        <Grid data={data} columnNum={3} itemStyle={{ width:'2.475rem', background: '#ffffff' }} hasLine={false} square={false} />
 
       </div>
       <div className="item">
@@ -69,7 +69,7 @@ const Photographer = () => (
           </div>
           <ul className="list clearfix"></ul>
         </div>
-        <Grid data={data} columnNum={3} itemStyle={{ width:'33.33%', background: '#ffffff' }} hasLine={false} square={false} />
+        <Grid data={data} columnNum={3} itemStyle={{ width:'2.475rem', background: '#ffffff' }} hasLine={false} square={false} />
       </div>
 
       <div className="item">
@@ -90,7 +90,7 @@ const Photographer = () => (
           </div>
           <ul className="list clearfix"></ul>
         </div>
-        <Grid data={data} columnNum={3} itemStyle={{ width:'33.33%', background: '#ffffff' }} hasLine={false} square={false} />
+        <Grid data={data} columnNum={3} itemStyle={{ width:'2.475rem', background: '#ffffff' }} hasLine={false} square={false} />
       </div>
     </div>
   </div>
