@@ -13,5 +13,7 @@ module.exports=override(
     }),
 
     // 按需加载antd-mobile
-    fixBabelImports('import',{libraryName:"antd-mobile",style:"css"},"antdm")
+    fixBabelImports('import',{libraryName:"antd-mobile",style:"css"},"antdm"),
+
+    
 )

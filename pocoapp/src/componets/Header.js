@@ -16,7 +16,6 @@ class App1 extends React.Component {
         <div>
           登录、注册
         </div>
-      
           <ul>
             <li>首页</li>
             <li>作品</li>
