@@ -1,0 +1,78 @@
+.header{
+    width: 100%;
+    height: .88rem;
+    background: #000;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.header>div{
+    color: #fff;
+    font-size: 0.2rem;
+    padding: 0 .5rem;
+}
+.content .content-con span{
+    height: .88rem;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    background:#fff;
+}
+.content-con .cont1{
+    border: none;
+    border-bottom: .01rem solid #2c72ac;
+    font-size: .14rem;
+    padding-bottom: .2rem;
+}
+.content-con .cont2{
+    border: none;
+    font-size: .14rem;
+    padding-bottom: .2rem;
+    border-bottom: .01rem solid #2c72ac;
+}
+/* 图片区 */ 
+ .ccc{
+    width: 100%;
+}
+ .ccc a i{
+    width: 33.3%;
+    /* height: 2.5rem; */
+}
+.ccc a{
+    width: 33.3%;
+    height: 2.5rem;
+    display: block;
+    float: left;
+}
+.ccc a img{
+    width: 100%;
+    height: 100%;
+    padding:.01rem;
+}
+/* 专辑区 */
+.content-con .eee{
+    width: 100%;
+}
+.content-con .eee ul li{
+    width: 100%;
+    height: 4rem;
+    position: relative;
+}
+.content-con .eee ul dl{
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    color: #fff;
+    font-size: .4rem;
+}
+.content-con .eee ul dl dt{
+    font-size: .6rem;
+}
+.content-con .eee ul dl dd{
+    font-size: .3rem;
+    padding:.2rem 1.5rem;
+}
+.content-con .eee ul li img{
+    width: 100%;
+    height: 100%;
+}

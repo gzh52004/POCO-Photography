@@ -3,8 +3,6 @@ import './assets/css/App.css';
 import { Form, Layout, Menu,Button} from 'antd';
 import {Route,Switch,withRouter} from 'react-router-dom';
 
-
-
 import User from './views/User';
 import List from './views/List';
 import Index from './views/index';
@@ -33,7 +31,7 @@ let addMenu=({key})=>{
             </React.Fragment>
           </div>
           <Menu theme="dark" mode="inline" selectedkeys={[current]}  onClick={addMenu}>
-          <Menu.Item key="/">
+          <Menu.Item key="/index">
               首页
             </Menu.Item>
             <Menu.Item key="User">
@@ -57,11 +55,11 @@ let addMenu=({key})=>{
             style={{
               margin: '24px 16px',
               padding: 24,
-              minHeight:530,
+              minHeight:530,  
             }}
           >
         <Switch>
-        <Route path={'/'} exact component={Index}></Route>
+        <Route path={'/index'} exact component={Index}></Route>
         <Route path={'/User'} component={User}></Route>
         <Route path={'/List'} component={List}></Route>
         <Route path={'/Login'} component={Login}></Route>
