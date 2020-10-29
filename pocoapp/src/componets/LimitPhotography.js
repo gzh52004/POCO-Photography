@@ -6,7 +6,6 @@ import ii from '../img/login.jpg'
 import im from '../img/highlightfeature_1960x1102_PC_01.jpg'
 import ls from '../img/G-CLASS-BANNER-PC.jpg'
 import gg from '../img/clasbkvpc.jpg'
-import '../assets/css/imageSquare.css'
 
 const tabs = [
     { title: '全部' },
