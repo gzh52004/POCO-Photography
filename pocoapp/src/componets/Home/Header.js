@@ -53,7 +53,7 @@ class App1 extends React.Component {
         style={{ minHeight: document.documentElement.clientHeight }}
         enableDragHandle
         contentStyle={{ color: '#A6A6A6', textAlign: 'center', paddingTop: 42 }}
-        sidebar={sidebar}
+        sidebar={sidebar} 
         open={this.state.open}
         onOpenChange={this.onOpenChange}
       >
