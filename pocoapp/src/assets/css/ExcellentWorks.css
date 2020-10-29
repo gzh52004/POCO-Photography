@@ -1,10 +1,9 @@
-.not-square-grid .am-grid-icon {
-    width: 40px;
-    height: 60px;
+.sub-title {
+    background: #ffffff;
 }
-.am-grid .am-flexbox .am-flexbox-item .am-grid-item-content {
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    padding: 0;
+.am-grid.am-grid-square .am-grid-item .am-grid-item-inner-content .am-grid-icon {
+    margin: 0;
+    width: 99%!important;
+    opacity: 1;
+    display: block;
 }
