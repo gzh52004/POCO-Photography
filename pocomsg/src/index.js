@@ -4,11 +4,19 @@ import {HashRouter} from 'react-router-dom';
 import './assets/css/index.css';
 import App from './App';
 import 'antd/dist/antd.css';
+import {Provider} from './components/Hook/store'
+
+// 根据环境不同切换不同的路由模式
+// process.env.NODE_ENV： development, production
+const Router = process.env.NODE_ENV === 'development' ? HashRouter : BrowserRouter;
 
 ReactDOM.render(
-  <HashRouter>
-    <App />
-  </HashRouter>,
+  <Provider>
+        <Router>
+            <App/>
+        </Router>
+  </Provider>
+    ,
   document.getElementById('root')
 );
 
