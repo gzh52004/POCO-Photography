@@ -19,8 +19,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    padding-top: 7px;
     padding-bottom: 7px;
+    padding: 13px 12px;
+    border-bottom: 1px solid #ddd;
 }
 .not-square-grid .am-grid-icon {
     width: 40px;
@@ -99,4 +100,8 @@
 /* 热门摄影师的作品展示 */
 .list{
     display: flex;
+}
+.shuiyin{
+    background: url('../data/HomeData/photographer/shuiyin.png') no-repeat center center #eee;
+    background-size: 0.862rem;
 }

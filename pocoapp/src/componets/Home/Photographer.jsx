@@ -21,9 +21,7 @@ import '../../assets/css/Photographer.css';
 // ]));
 
 const data = Array.from(new Array(3)).map(() => ({
-  icon:'https://pic3.pocoimg.cn/image/poco/works/68/2020/0409/09/15863966894205061_201318911.jpg?imageView2/1/w/240/h/240/q/95&',
-  // icon:'https://pic3.pocoimg.cn/image/poco/avatar/81/4648/46480999_1514322418_21996.jpg',
-  // icon:'https://pic3.pocoimg.cn/image/poco/avatar/85/20144/201441548_1594793177_48998.jpg'
+  icon:'https://pic3.pocoimg.cn/image/poco/works/55/2020/1029/13/16039494628956804_200213811.jpg?imageView2/1/w/240/h/240/q/95&',
 }));
 
 const Photographer = () => (
@@ -46,9 +44,11 @@ const Photographer = () => (
               <i className="txt">流水不争先</i>
             </a>
           </div>
-          <ul className="list clearfix"></ul>
+          <ul className="list clearfix">
+            <a className="shuiyin"></a>
+          </ul>
         </div>
-        <Grid data={data} columnNum={3} itemStyle={{ height: '125px', background: '#ffffff' }} hasLine={false} square={false} />
+        <Grid data={data} columnNum={3} itemStyle={{ width:'33.33%', background: '#ffffff' }} hasLine={false} square={false} />
 
       </div>
       <div className="item">
@@ -69,7 +69,7 @@ const Photographer = () => (
           </div>
           <ul className="list clearfix"></ul>
         </div>
-        <Grid data={data} columnNum={3} itemStyle={{ height: '125px', background: '#ffffff' }} hasLine={false} square={false} />
+        <Grid data={data} columnNum={3} itemStyle={{ width:'33.33%', background: '#ffffff' }} hasLine={false} square={false} />
       </div>
 
       <div className="item">
@@ -90,7 +90,7 @@ const Photographer = () => (
           </div>
           <ul className="list clearfix"></ul>
         </div>
-        <Grid data={data} columnNum={3} itemStyle={{ height: '125px', background: '#ffffff' }} hasLine={false} square={false} />
+        <Grid data={data} columnNum={3} itemStyle={{ width:'33.33%', background: '#ffffff' }} hasLine={false} square={false} />
       </div>
     </div>
   </div>
