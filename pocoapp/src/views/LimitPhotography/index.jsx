@@ -1,6 +1,6 @@
 import React from 'react';
 import { Icon } from 'antd-mobile';
-import TabExample from  '../../componets/LimitPhotography.js'
+import TabExampl from  '../../componets/LimitPhotography.js'
 
 function LimitPhotography(){
     // 极限摄影
@@ -14,7 +14,7 @@ function LimitPhotography(){
             <div className="content">
                 <div className="content-con">
                   {/* 内容 */}
-                   <TabExample />
+                   <TabExampl />
                 </div>
             </div>
         </div>
