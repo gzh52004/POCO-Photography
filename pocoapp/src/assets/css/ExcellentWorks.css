@@ -54,3 +54,10 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
+/* 照片 */
+.img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: inline-block;
+}

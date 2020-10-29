@@ -2422,6 +2422,13 @@ axe-core@^3.5.4:
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-3.5.5.tgz#84315073b53fa3c0c51676c588d59da09a192227"
   integrity sha512-5P0QZ6J5xGikH780pghEdbEKijCTrruK9KxtPZCFWUpef0f6GipO+xEZ5GKCb020mmqgbiNO6TcA55CriL784Q==
 
+axios@^0.21.0:
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.0.tgz#26df088803a2350dff2c27f96fef99fe49442aca"
+  integrity sha512-fmkJBknJKoZwem3/IKSSLpkdNXZeBu5Q7GA/aRsr2btgrptmSCxi2oFjZHqGdK9DoTil9PIHlPIZw2EcRJXRvw==
+  dependencies:
+    follow-redirects "^1.10.0"
+
 axobject-query@^2.1.2:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/axobject-query/-/axobject-query-2.2.0.tgz#943d47e10c0b704aa42275e20edf3722648989be"
@@ -3684,8 +3691,13 @@ css-loader@4.3.0:
 
 css-loader@^5.0.0:
   version "5.0.0"
+<<<<<<< HEAD
   resolved "https://registry.npm.taobao.org/css-loader/download/css-loader-5.0.0.tgz?cache=0&sync_timestamp=1602609200442&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcss-loader%2Fdownload%2Fcss-loader-5.0.0.tgz#f0a48dfacc3ab9936a05ee16a09e7f313872e117"
   integrity sha1-8KSN+sw6uZNqBe4WoJ5/MThy4Rc=
+=======
+  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-5.0.0.tgz#f0a48dfacc3ab9936a05ee16a09e7f313872e117"
+  integrity sha512-9g35eXRBgjvswyJWoqq/seWp+BOxvUl8IinVNTsUBFFxtwfEYvlmEn6ciyn0liXGbGh5HyJjPGCuobDSfqMIVg==
+>>>>>>> luoxiaofan
   dependencies:
     camelcase "^6.1.0"
     cssesc "^3.0.0"
@@ -5150,7 +5162,7 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
-follow-redirects@^1.0.0:
+follow-redirects@^1.0.0, follow-redirects@^1.10.0:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
   integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
@@ -5822,8 +5834,13 @@ icss-utils@^4.0.0, icss-utils@^4.1.1:
 
 icss-utils@^5.0.0:
   version "5.0.0"
+<<<<<<< HEAD
   resolved "https://registry.npm.taobao.org/icss-utils/download/icss-utils-5.0.0.tgz?cache=0&sync_timestamp=1602526927264&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ficss-utils%2Fdownload%2Ficss-utils-5.0.0.tgz#03ed56c3accd32f9caaf1752ebf64ef12347bb84"
   integrity sha1-A+1Ww6zNMvnKrxdS6/ZO8SNHu4Q=
+=======
+  resolved "https://registry.yarnpkg.com/icss-utils/-/icss-utils-5.0.0.tgz#03ed56c3accd32f9caaf1752ebf64ef12347bb84"
+  integrity sha512-aF2Cf/CkEZrI/vsu5WI/I+akFgdbwQHVE9YRZxATrhH4PVIe6a3BIjwjEcW+z+jP/hNh+YvM3lAAn1wJQ6opSg==
+>>>>>>> luoxiaofan
 
 identity-obj-proxy@3.0.0:
   version "3.0.0"
@@ -8837,8 +8854,13 @@ postcss-modules-extract-imports@^2.0.0:
 
 postcss-modules-extract-imports@^3.0.0:
   version "3.0.0"
+<<<<<<< HEAD
   resolved "https://registry.npm.taobao.org/postcss-modules-extract-imports/download/postcss-modules-extract-imports-3.0.0.tgz?cache=0&sync_timestamp=1602588245463&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpostcss-modules-extract-imports%2Fdownload%2Fpostcss-modules-extract-imports-3.0.0.tgz#cda1f047c0ae80c97dbe28c3e76a43b88025741d"
   integrity sha1-zaHwR8CugMl9vijD52pDuIAldB0=
+=======
+  resolved "https://registry.yarnpkg.com/postcss-modules-extract-imports/-/postcss-modules-extract-imports-3.0.0.tgz#cda1f047c0ae80c97dbe28c3e76a43b88025741d"
+  integrity sha512-bdHleFnP3kZ4NYDhuGlVK+CMrQ/pqUm8bx/oGL93K6gVwiclvX5x0n76fYMKuIGKzlABOy13zsvqjb0f92TEXw==
+>>>>>>> luoxiaofan
 
 postcss-modules-local-by-default@^3.0.3:
   version "3.0.3"
@@ -8852,8 +8874,13 @@ postcss-modules-local-by-default@^3.0.3:
 
 postcss-modules-local-by-default@^4.0.0:
   version "4.0.0"
+<<<<<<< HEAD
   resolved "https://registry.npm.taobao.org/postcss-modules-local-by-default/download/postcss-modules-local-by-default-4.0.0.tgz?cache=0&sync_timestamp=1602587568476&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpostcss-modules-local-by-default%2Fdownload%2Fpostcss-modules-local-by-default-4.0.0.tgz#ebbb54fae1598eecfdf691a02b3ff3b390a5a51c"
   integrity sha1-67tU+uFZjuz99pGgKz/zs5ClpRw=
+=======
+  resolved "https://registry.yarnpkg.com/postcss-modules-local-by-default/-/postcss-modules-local-by-default-4.0.0.tgz#ebbb54fae1598eecfdf691a02b3ff3b390a5a51c"
+  integrity sha512-sT7ihtmGSF9yhm6ggikHdV0hlziDTX7oFoXtuVWeDd3hHObNkcHRo9V3yg7vCAY7cONyxJC/XXCmmiHHcvX7bQ==
+>>>>>>> luoxiaofan
   dependencies:
     icss-utils "^5.0.0"
     postcss-selector-parser "^6.0.2"
@@ -8869,8 +8896,13 @@ postcss-modules-scope@^2.2.0:
 
 postcss-modules-scope@^3.0.0:
   version "3.0.0"
+<<<<<<< HEAD
   resolved "https://registry.npm.taobao.org/postcss-modules-scope/download/postcss-modules-scope-3.0.0.tgz?cache=0&sync_timestamp=1602593260387&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpostcss-modules-scope%2Fdownload%2Fpostcss-modules-scope-3.0.0.tgz#9ef3151456d3bbfa120ca44898dfca6f2fa01f06"
   integrity sha1-nvMVFFbTu/oSDKRImN/Kby+gHwY=
+=======
+  resolved "https://registry.yarnpkg.com/postcss-modules-scope/-/postcss-modules-scope-3.0.0.tgz#9ef3151456d3bbfa120ca44898dfca6f2fa01f06"
+  integrity sha512-hncihwFA2yPath8oZ15PZqvWGkWf+XUfQgUGamS4LqoP1anQLOsOJw0vr7J7IwLpoY9fatA2qiGUGmuZL0Iqlg==
+>>>>>>> luoxiaofan
   dependencies:
     postcss-selector-parser "^6.0.4"
 
@@ -8884,8 +8916,13 @@ postcss-modules-values@^3.0.0:
 
 postcss-modules-values@^4.0.0:
   version "4.0.0"
+<<<<<<< HEAD
   resolved "https://registry.npm.taobao.org/postcss-modules-values/download/postcss-modules-values-4.0.0.tgz?cache=0&sync_timestamp=1602586230505&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpostcss-modules-values%2Fdownload%2Fpostcss-modules-values-4.0.0.tgz#d7c5e7e68c3bb3c9b27cbf48ca0bb3ffb4602c9c"
   integrity sha1-18Xn5ow7s8myfL9Iyguz/7RgLJw=
+=======
+  resolved "https://registry.yarnpkg.com/postcss-modules-values/-/postcss-modules-values-4.0.0.tgz#d7c5e7e68c3bb3c9b27cbf48ca0bb3ffb4602c9c"
+  integrity sha512-RDxHkAiEGI78gS2ofyvCsu7iycRv7oqw5xMWn9iMoR0N/7mf9D50ecQqUo5BZ9Zh2vH4bCUR/ktCqbB9m8vJjQ==
+>>>>>>> luoxiaofan
   dependencies:
     icss-utils "^5.0.0"
 
@@ -9216,8 +9253,13 @@ postcss@^8.1.0:
 
 postcss@^8.1.1:
   version "8.1.4"
+<<<<<<< HEAD
   resolved "https://registry.npm.taobao.org/postcss/download/postcss-8.1.4.tgz?cache=0&sync_timestamp=1603496056144&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpostcss%2Fdownload%2Fpostcss-8.1.4.tgz#356dfef367a70f3d04347f74560c85846e20e4c1"
   integrity sha1-NW3+82enDz0ENH90VgyFhG4g5ME=
+=======
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.1.4.tgz#356dfef367a70f3d04347f74560c85846e20e4c1"
+  integrity sha512-LfqcwgMq9LOd8pX7K2+r2HPitlIGC5p6PoZhVELlqhh2YGDVcXKpkCseqan73Hrdik6nBd2OvoDPUaP/oMj9hQ==
+>>>>>>> luoxiaofan
   dependencies:
     colorette "^1.2.1"
     line-column "^1.0.2"

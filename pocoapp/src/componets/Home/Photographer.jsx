@@ -1,46 +1,103 @@
 import React from 'react';
-import { List } from 'antd-mobile';
+import { Grid } from 'antd-mobile';
 import '../../assets/css/Photographer.css';
 
-const Item = List.Item;
-const Brief = Item.Brief;
-// const data=[
-//     {
-//         img:'https://pic3.pocoimg.cn/image/poco/works/68/2020/0409/09/15863966894205061_201318911.jpg?imageView2/1/w/240/h/240/q/95&',
-//         txt:'摄影师私藏的8个拍摄道具：你也可以拍摄出杂志感大片'
-//     },
-//     {
-//         img:'https://pic3.pocoimg.cn/image/poco/works/04/2020/0331/17/15856461176819077_201318911.jpg?imageView2/1/w/240/h/240/q/95&',
-//         txt:'#本叔PS教程# | 摄影后期必备调色技巧之色相色谱条技法'
-//     },
-//     {
-//         img:'https://pic3.pocoimg.cn/image/poco/works/05/2020/0327/16/15852980447956431_201318833.jpg?imageView2/1/w/240/h/240/q/95&',
-//         txt:'#后期教程#如何给客片修出杂志感照片？'
-//     }
-// ];
+// const data=Array.from(new Array(3)).map(() =>([
+//   {
+//     icon:'https://pic3.pocoimg.cn/image/poco/avatar/30/20021/200213811_1519144405_53416.jpg',
+//     userName:'清溪',
+//     verified:'自由摄影师'
+//   },
+//   {
+//     icon:'https://pic3.pocoimg.cn/image/poco/avatar/81/4648/46480999_1514322418_21996.jpg',
+//     userName:'Hc',
+//     verified:'简单、随心'
+//   },
+//   {
+//     icon:'https://pic3.pocoimg.cn/image/poco/avatar/85/20144/201441548_1594793177_48998.jpg',
+//     userName:'黑摄会女青年',
+//     verified:'这个家伙很懒，什么都没有写'
+//   }
+// ]));
 
-class Photographer extends React.Component {
-  state = {
-    disabled: false,
-  }
+const data = Array.from(new Array(3)).map(() => ({
+  icon:'https://pic3.pocoimg.cn/image/poco/works/55/2020/1029/13/16039494628956804_200213811.jpg?imageView2/1/w/240/h/240/q/95&',
+}));
 
-  render() {
-    return (
-    <div>
-        <List className="my-list">
-            <Item>热门摄影师</Item>
-            <Item align="top" thumb="https://pic3.pocoimg.cn/image/poco/works/68/2020/0409/09/15863966894205061_201318911.jpg?imageView2/1/w/240/h/240/q/95&" multipleLine>
-            <Brief>摄影师私藏的8个拍摄道具：你也可以拍摄出杂志感大片</Brief>
-            </Item>
-            <Item align="top" thumb="https://pic3.pocoimg.cn/image/poco/works/04/2020/0331/17/15856461176819077_201318911.jpg?imageView2/1/w/240/h/240/q/95&" multipleLine>
-            <Brief>#本叔PS教程# | 摄影后期必备调色技巧之色相色谱条技法</Brief>
-            </Item>
-            <Item align="top" thumb="https://pic3.pocoimg.cn/image/poco/works/05/2020/0327/16/15852980447956431_201318833.jpg?imageView2/1/w/240/h/240/q/95&" multipleLine>
-            <Brief>#后期教程#如何给客片修出杂志感照片？</Brief>
-            </Item>
-        </List>
-    </div>);
-  }
-}
+const Photographer = () => (
+  <div>
+    <div className="photographerBox">
+      <div className="sub-title">热门摄影师</div>
+      <div className="item">
+        <div className="personCard">
+          <div className="personHead">
+            <a className="personImg">
+              <img src="https://pic3.pocoimg.cn/image/poco/avatar/30/20021/200213811_1519144405_53416.jpg" />
+            </a>
+            <a>
+              <div className="personInfo">
+                <span className="userName">清溪</span>
+                <span className="verified">
+                  <i>自由摄影师</i>
+                </span>
+              </div>
+              <i className="txt">流水不争先</i>
+            </a>
+          </div>
+          <ul className="list clearfix">
+            <a className="shuiyin"></a>
+          </ul>
+        </div>
+        <Grid data={data} columnNum={3} itemStyle={{ width:'33.33%', background: '#ffffff' }} hasLine={false} square={false} />
+
+      </div>
+      <div className="item">
+        <div className="personCard">
+          <div className="personHead">
+            <a className="personImg">
+              <img src="https://pic3.pocoimg.cn/image/poco/avatar/30/20021/200213811_1519144405_53416.jpg" />
+            </a>
+            <a>
+              <div className="personInfo">
+                <span className="userName">清溪</span>
+                <span className="verified">
+                  <i>自由摄影师</i>
+                </span>
+              </div>
+              <i className="txt">流水不争先</i>
+            </a>
+          </div>
+          <ul className="list clearfix"></ul>
+        </div>
+        <Grid data={data} columnNum={3} itemStyle={{ width:'33.33%', background: '#ffffff' }} hasLine={false} square={false} />
+      </div>
+
+      <div className="item">
+        <div className="personCard">
+          <div className="personHead">
+            <a className="personImg">
+              <img src="https://pic3.pocoimg.cn/image/poco/avatar/30/20021/200213811_1519144405_53416.jpg" />
+            </a>
+            <a>
+              <div className="personInfo">
+                <span className="userName">清溪</span>
+                <span className="verified">
+                  <i>自由摄影师</i>
+                </span>
+              </div>
+              <i className="txt">流水不争先</i>
+            </a>
+          </div>
+          <ul className="list clearfix"></ul>
+        </div>
+        <Grid data={data} columnNum={3} itemStyle={{ width:'33.33%', background: '#ffffff' }} hasLine={false} square={false} />
+      </div>
+    </div>
+  </div>
+  );
+
+
+
+
 
 export default Photographer;
