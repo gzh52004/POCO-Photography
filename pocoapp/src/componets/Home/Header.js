@@ -29,22 +29,7 @@ class App1 extends React.Component {
         <span className="listfooterImg"></span>
         <span>&gt;</span>
         </div>
-<<<<<<< HEAD:pocoapp/src/componets/Header.js
-          <ul>
-            <li>首页</li>
-            <li>作品</li>
-            <li>图片广场</li>
-            <li>摄影技巧</li>
-            <li>对话</li>
-            <li>极限摄影</li>
-            <li>POCO认证</li>
-          </ul>
-        
-     </List.Item>
-    </List>
-=======
     </List>);
->>>>>>> 038ad3c207e01bb8b66e59ea39ed3e2da37160c9:pocoapp/src/componets/Home/Header.js
 
     return (<div>
       <NavBar style={{backgroundColor:"#000",fontSize:".18rem"}} icon={<Icon type="ellipsis" />} onLeftClick={this.onOpenChange}>POCO摄影</NavBar>
