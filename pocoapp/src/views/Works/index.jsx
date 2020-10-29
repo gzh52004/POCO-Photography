@@ -3,7 +3,9 @@ import App from '../../App';
 import app from '../../setupProxy';
 console.log(app)
 class Works extends React.Component{
-    
+    constructor(){
+        super()
+    }
    componentDidMount(){
      
     }
