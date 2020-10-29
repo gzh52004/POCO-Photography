@@ -3,8 +3,6 @@ import './assets/css/App.css';
 import { Form, Layout, Menu,Button} from 'antd';
 import {Route,Switch,withRouter} from 'react-router-dom';
 
-
-
 import User from './views/User';
 import List from './views/List';
 import Index from './views/index';
