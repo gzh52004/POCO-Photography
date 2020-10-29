@@ -1,6 +1,6 @@
 import React from 'react'
 import { Drawer, List, NavBar, Icon } from 'antd-mobile';
-import '../assets/css/Header.css';
+import '../../assets/css/Header.css';
 class App1 extends React.Component {
   state = {
     open: false,
@@ -11,11 +11,25 @@ class App1 extends React.Component {
   }
   render() {
     // fix in codepen
-    const sidebar = <List>
-     <List.Item>
-        <div>
-          登录、注册
+    const sidebar =( <List>
+      <div className="texttop">
+        <span className="user"></span>
+        <span className="usertext">登录/注册</span>
+      </div>
+      <ul>
+        <li>首页</li>
+        <li>作品</li>
+        <li>图片广场</li>
+        <li>摄影技巧</li>
+        <li>对话</li>
+        <li>极限摄影</li>
+        <li>POCO认证</li>
+      </ul>
+      <div className="listfooter">
+        <span className="listfooterImg"></span>
+        <span>&gt;</span>
         </div>
+<<<<<<< HEAD:pocoapp/src/componets/Header.js
           <ul>
             <li>首页</li>
             <li>作品</li>
@@ -28,9 +42,12 @@ class App1 extends React.Component {
         
      </List.Item>
     </List>
+=======
+    </List>);
+>>>>>>> 038ad3c207e01bb8b66e59ea39ed3e2da37160c9:pocoapp/src/componets/Home/Header.js
 
     return (<div>
-      <NavBar style={{backgroundColor:"#000",fontSize:".14rem"}} icon={<Icon type="ellipsis" />} onLeftClick={this.onOpenChange}>POCO摄影</NavBar>
+      <NavBar style={{backgroundColor:"#000",fontSize:".18rem"}} icon={<Icon type="ellipsis" />} onLeftClick={this.onOpenChange}>POCO摄影</NavBar>
       <Drawer
         className="my-drawer"
         style={{ minHeight: document.documentElement.clientHeight }}

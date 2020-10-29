@@ -1,0 +1,24 @@
+.smlist{
+    background: #fff;
+    height: 1.781rem;
+    padding: 0 0.56rem;
+}
+.list{
+    display: flex;
+}
+.list li{
+    flex: 1;
+    text-align: center;
+    padding-top: 0.281rem;
+    color: #000000;
+}
+.list li img{
+    width: 0.806rem;
+    height: 0.806rem;
+    margin: 0 auto;
+    background-size: cover;
+}
+.list li .txt{
+    padding-top: 0.09rem;
+    font-size: 0.262rem;
+}

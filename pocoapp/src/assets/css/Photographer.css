@@ -1,0 +1,107 @@
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.photographerBox{
+    background-color: #ffffff;
+}
+.sub-title {
+    flex: 1;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: left;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-bottom: 7px;
+    padding: 13px 12px;
+    border-bottom: 1px solid #ddd;
+}
+.not-square-grid .am-grid-icon {
+    width: 40px;
+    height: 60px;
+}
+
+.personCard{
+    position: relative;
+    padding: 15px 10px 12px;
+    overflow: hidden;
+}
+.personHead{
+    width: 100%;
+    overflow: hidden;
+    padding-left: 42px;
+    box-sizing: border-box;
+}
+.personImg{
+    display: block;
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin-left: -42px;
+    border-radius: 32px;
+    overflow: hidden;
+}
+.personImg img{
+    opacity: 1;
+    display: block;
+    margin-left: auto;
+    height: auto;
+    width: 100%;
+    margin-top: 0px;
+}
+.personInfo{
+    display: block;
+    padding-bottom: 2px;
+    color: #2c72ac;
+    font-size: 14px;
+    padding-right: 0;
+    line-height: 15px;
+    max-height: 30px;
+}
+.personInfo .userName{
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.verified{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    line-height: 0;
+}
+.verified i{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 4px;
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background: url('../../assets/data/HomeData/photographer/verified_icon.png') no-repeat 0/14px;
+}
+.txt{
+    color: #aaa;
+    display: block;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* 热门摄影师的作品展示 */
+/* .list{
+    display: flex;
+} */
+.shuiyin{
+    background: url('../data/HomeData/photographer/shuiyin.png') no-repeat center center #eee;
+    background-size: 0.862rem;
+}

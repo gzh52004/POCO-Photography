@@ -15,4 +15,4 @@ class Works extends React.Component{
     }
 }
 
-export default Works
+export default Works    

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // 对axios的二次封装
 
 // 1.引入
@@ -20,4 +21,14 @@ const request = axios.create({
 })
 
 // 3.导出axios对象
+=======
+import axios from 'axios';
+
+const baseURL="https://www.poco.cn";  // 要修改
+
+const request=axios.create({
+    baseURL:baseURL,
+});
+
+>>>>>>> 038ad3c207e01bb8b66e59ea39ed3e2da37160c9
 export default request;
