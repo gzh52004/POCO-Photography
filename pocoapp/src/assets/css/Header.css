@@ -11,6 +11,9 @@
   line-height: 30px;
   width: 100%;
 } */
+.am-navbar{
+  z-index: 0;
+}
 /* 遮罩层 */
 .am-drawer-overlay{
   display: block;
