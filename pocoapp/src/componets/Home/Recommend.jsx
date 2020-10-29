@@ -1,6 +1,7 @@
 import React from 'react';
 import { List } from 'antd-mobile';
 import '../../assets/css/Recommend.css';
+// import request from '../../utils/request';
 
 const Item = List.Item;
 const Brief = Item.Brief;
@@ -20,11 +21,27 @@ const Brief = Item.Brief;
 // ];
 
 class Recommend extends React.Component {
-  state = {
-    disabled: false,
-  }
+//   state = {
+//     disabled: false,
+//     favourite_recommend:[],
+//     skill:[],
+//     slideshow:[],
+//   }
+
+//   async componentDidMount(){
+//     const {data:favourite_recommend}=await request.get('/user');
+//     const {data:skill}=await request.get('/user');
+//     const {data:slideshow}=await request.get('/user');
+//     this.setState({
+//         favourite_recommend:favourite_recommend.data.result,
+//         skill:skill.data.result,
+//         slideshow:slideshow.data.result,
+//     })
+// }
 
   render() {
+    // const {favourite_recommend,skill,slideshow}=this.state;
+    // console.log('favourite_recommend=',favourite_recommend);
     return (
     <div>
         <List className="my-list">

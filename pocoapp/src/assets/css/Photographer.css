@@ -96,3 +96,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+/* 热门摄影师的作品展示 */
+.list{
+    display: flex;
+}
