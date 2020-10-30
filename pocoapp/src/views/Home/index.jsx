@@ -1,33 +1,22 @@
 import React from 'react';
-import Header from '../../componets/Home/Header';
-import Banner from '../../componets/Home/Banner';
-import SmallNav from '../../componets/Home/SmallNav';
-import Recommend from '../../componets/Home/Recommend';
-import Photographer from '../../componets/Home/Photographer';
-import ExcellentWorks from '../../componets/Home/ExcellentWorks'
+import Header from '../../componets/Header';
 
-class Home extends React.Component {
-  
-  render() {
-    return (
+
+function Home(){
+    return(
         <div>
             <div>
-                <div className="header">
-                    <Header></Header>
-                </div>
-                <div className="content">
-                    <div className="content-con">
-                        <Banner />
-                        <SmallNav />
-                        <Recommend />
-                        <Photographer />
-                        <ExcellentWorks />
-                    </div>
+           <div className="header">
+                <Header></Header>
+           </div>
+            <div className="content">
+                <div className="content-con">
+                        1
                 </div>
             </div>
+            </div>
         </div>
-    );
-  }
+    )
 }
 
-export default Home;
+export default Home
