@@ -1,16 +1,16 @@
 import React from 'react';
-import { Form, Input, Button, Checkbox ,message} from 'antd';
+import { Form, Input, Button, Checkbox, message } from 'antd';
 import SHA256 from 'crypto-js/sha256';console.dir(SHA256)
+
 import request from '../../utils/request';
 
-
-const Login = function(props) {
-    console.log('Login.props',props);
-    const onFinish = async (values) =>{
-        console.log('加密前=',values);
-        let {username,password ,remember}=values;
-        password =SHA256(values,password).toString()
-        console.log('加密后=',password);
+function Login(props) {
+    console.log('Login.props', props);
+    const onFinish = async (values) => {console.log('加密前=',values)
+        // 把密码通过Crypto进行加密（加密算法：sha256）
+        let {username,password,remember} = values;
+        password = SHA256(values.password).toString()
+       console.log('加密后=',password)
         const { data } = await request.get('/user/login', {
             params:{
                 username,
@@ -40,6 +40,8 @@ const Login = function(props) {
         }else{
             message.error('用户名或密码错误') 
         }
+
+       
     }
     return (
         <div>
@@ -50,7 +52,7 @@ initialValues={{ remember: true }}
                 onFinish={onFinish}
             >
                 <Form.Item
-                    label="用户名"
+                    label="Username"
                     name="username"
                     rules={[{ required: true, message: 'Please input your username!' }]}
 hasFeedback
@@ -60,7 +62,7 @@ hasFeedback
                 </Form.Item>
 
                 <Form.Item
-                    label="密码"
+                    label="Password"
                     name="password"
                     rules={[{ required: true, message: 'Please input your password!' }]}
                     style={{width:600,marginBottom:20,marginLeft:250}}
@@ -69,7 +71,7 @@ hasFeedback
                 </Form.Item>
 
                 <Form.Item name="remember" valuePropName="checked">
-                    <Checkbox>免登陆</Checkbox>
+                    <Checkbox>记住我？</Checkbox>
                 </Form.Item>
 
                 <Form.Item >
