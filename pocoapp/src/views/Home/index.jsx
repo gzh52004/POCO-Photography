@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../componets/Home/Header';
+import App1 from '../../componets/Home/Header';
 import Banner from '../../componets/Home/Banner';
 import SmallNav from '../../componets/Home/SmallNav';
 import Recommend from '../../componets/Home/Recommend';
@@ -13,7 +13,7 @@ class Home extends React.Component {
         <div>
             <div>
                 <div className="header">
-                    <Header></Header>
+                    <App1/>
                 </div>
                 <div className="content">
                     <div className="content-con">

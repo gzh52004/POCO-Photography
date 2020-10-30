@@ -12,9 +12,8 @@ const tabs = [
     { title: '专辑' },
 ];
 
-const TabExample = () => (
+const TabExamplea = () => (
     <div>
-        <WhiteSpace />
         <Tabs tabs={tabs} initialPage={0} animated={false} useOnPan={false}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', backgroundColor: '#fff' }}>
                 <div>
@@ -211,4 +210,4 @@ const TabExample = () => (
     </div>
 );
 
-export default TabExample;
+export default TabExamplea;

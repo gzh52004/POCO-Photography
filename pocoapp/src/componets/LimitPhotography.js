@@ -21,15 +21,16 @@ const tabs = [
 
 const TabExample = () => (
     <div>
+        <WhiteSpace>
         <Tabs tabs={tabs} initialPage={0} animated={false} useOnPan={false}>
-            <div style={{ backgroundColor: '#fff' }}>
+            <div style={{backgroundColor: '#fff' }}>
                 <div>
                     <div className="aaa">
                         <a src="###">
                             <i>
                                 <img src={img} />
                             </i>
-                            <h3>每周摄影师推荐Vol.23——关顺志/Ken Kwan</h3>
+                            <h3>每周摄影师推荐Vol.23——关顺志A/Ken Kwan</h3>
                             <span>2017-12-19</span>
                         </a>
                         <a src="###">
@@ -155,7 +156,7 @@ const TabExample = () => (
                 </div>
 
             </div>
-            <div style={{ backgroundColor: '#fff' }}>
+            <div style={{backgroundColor: '#fff'}}>
                 <div className="bbb">
                     <a src="###">
                         <i>
@@ -1066,7 +1067,7 @@ const TabExample = () => (
                 </div>
             </div>
         </Tabs>
-        <WhiteSpace />
+        </WhiteSpace>
     </div>
 );
 

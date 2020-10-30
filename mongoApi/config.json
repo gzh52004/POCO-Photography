@@ -1,0 +1,17 @@
+{
+  "PORT": 5000,
+  "dbUrl": "mongodb://localhost:27017",
+  "dbName": "POCO",
+  "cryptoHash": "md5",
+  "saltValue": "jiayan",
+  "secret": "kuiya",
+  "targetUrl": "http://localhost",
+  "_comment": {
+    "PORT": "端口号",
+    "dbUrl": "数据库连接地址",
+    "dbName": "数据库名",
+    "cryptoHash": "用于密码单向加密的算法",
+    "saltValue": "单向加密的盐值，用于安全性优化",
+    "secret": "密钥，用于token令牌的校验"
+  }
+}

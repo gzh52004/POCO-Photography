@@ -9,7 +9,7 @@ function Identification(){
            </div>
             <div className="content">
                 <div className="content-con">
-  1
+  
                 </div>
             </div>
             </div>
