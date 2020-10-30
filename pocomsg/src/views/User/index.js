@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Table, Switch, Radio, Form, Space } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
+import userAPI from '../../api/userAPI';
 
 const columns = [
   {
@@ -40,16 +41,16 @@ const columns = [
   },
 ];
 
-const data = [];
-for (let i = 1; i <= 50; i++) {
-  data.push({
-    key: i,
-    name: 'John Brown',
-    age: `${i}2`,
-    address: `New York No. ${i} Lake Park`,
-    description: `My name is John Brown, I am ${i}2 years old, living in New York No. ${i} Lake Park.`,
-  });
-}
+const dataSource = [];
+// for (let i = 1; i <= 10; i++) {
+//   dataSource.push({
+//     key: i,
+//     name: 'John Brown',
+//     age: `${i}2`,
+//     address: `New York No. ${i} Lake Park`,
+//     description: `My name is John Brown, I am ${i}2 years old, living in New York No. ${i} Lake Park.`,
+//   });
+// }
 
 const expandable = { expandedRowRender: record => <p>{record.description}</p> };
 const showHeader = true;
@@ -107,7 +108,14 @@ class User extends React.Component {
   handleDataChange = hasData => {
     this.setState({ hasData });
   };
-
+  datalist() {
+      userAPI.getUserData().then(res=>{
+        console.log(res)
+      })
+  }
+  componentDidMount(){
+    this.datalist()
+}
   render() {
     const { xScroll, yScroll, ...state } = this.state;
 
@@ -160,7 +168,7 @@ class User extends React.Component {
           {...this.state}
           pagination={{ position: [this.state.top, this.state.bottom] }}
           columns={tableColumns}
-          dataSource={state.hasData ? data : null}
+          dataSource={state.hasData ? dataSource : null}
           scroll={scroll}
         />
       </>
@@ -168,15 +176,5 @@ class User extends React.Component {
   }
 }
 
-// ReactDOM.render(<User />, mountNode);
-
-
-// function User(){
-//     return(
-//         <div>
-
-//         </div>
-//     )
-// }
 
 export default User;

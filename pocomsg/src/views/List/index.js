@@ -29,6 +29,7 @@ function List() {
           key: '2',
           width: 100,
         },
+        
        
       //  Action
         {
@@ -48,14 +49,14 @@ function List() {
       ];
       
       const data = [];
-      for (let i = 0; i < 100; i++) {
-        data.push({
-          key: i,
-          name: `Edrward ${i}`,
-          id: i+1,
-          address: `London Park no. ${i}`,
-        });
-      }
+      // for (let i = 0; i < 100; i++) {
+      //   data.push({
+      //     key: i,
+      //     name: `Edrward ${i}`,
+      //     id: i+1,
+      //     address: `London Park no. ${i}`,
+      //   });
+      // }
     return (
         <div>
             <Table columns={columns} dataSource={data} scroll={{ x: 1000, y: 500 }} />
