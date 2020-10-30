@@ -1,5 +1,5 @@
 const path = require('path');
-
+console.log(require)
 // react-app-rewired@1.x的写法
 // const { injectBabelPlugin } = require('react-app-rewired');
 // module.exports = function override(config, env) {

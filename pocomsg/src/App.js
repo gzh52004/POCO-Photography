@@ -55,7 +55,7 @@ let addMenu=({key})=>{
             style={{
               margin: '24px 16px',
               padding: 24,
-              minHeight:530,  
+              minHeight:550,  
             }}
           >
         <Switch>
