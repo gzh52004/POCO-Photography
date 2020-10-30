@@ -34,10 +34,7 @@ const columns = [
     sorter: true,
     render: () => (
       <Space size="middle">
-        <a>删除</a>
-        <a className="ant-dropdown-link">
-          更多操作 <DownOutlined />
-        </a>
+        <button>删除</button>
       </Space>
     ),
   },

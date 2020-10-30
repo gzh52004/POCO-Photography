@@ -1,5 +1,5 @@
 import { Tabs, WhiteSpace } from 'antd-mobile';
-import img from '../img/17897476920171115222513092_178974769.jpg'
+import imgg from '../img/17897476920171115222513092_178974769.jpg'
 import imgs from '../img/mv.jpg'
 import ii from '../img/login.jpg'
 import im from '../img/highlightfeature_1960x1102_PC_01.jpg'
@@ -20,7 +20,7 @@ const TabExamplea = () => (
                      <div className="ccc">
                             <a href="###">
                                 <i>
-                                    <img src={img} alt="" />
+                                    <img src={imgg} alt="" />
                                 </i>
                             </a>
                             <a href="###">
@@ -55,7 +55,7 @@ const TabExamplea = () => (
                             </a>
                             <a href="###">
                                 <i>
-                                    <img src={img} alt="" />
+                                    <img src={imgg} alt="" />
                                 </i>
                             </a>
                             <a href="###">
@@ -110,7 +110,7 @@ const TabExamplea = () => (
                             </a>
                             <a href="###">
                                 <i>
-                                    <img src={img} alt="" />
+                                    <img src={imgg} alt="" />
                                 </i>
                             </a>
                             <a href="###">
@@ -194,7 +194,7 @@ const TabExamplea = () => (
                                 </a>
                                 <a href="###">
                                     <li>
-                                        <img src={img} alt="" />
+                                        <img src={imgg} alt="" />
                                     <dl>
                                         <dt>手机摄影图片精选</dt>
                                         <dd>POCO 摄影社区</dd>
