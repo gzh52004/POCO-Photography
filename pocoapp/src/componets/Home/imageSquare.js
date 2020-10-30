@@ -1,5 +1,5 @@
 import { Tabs, WhiteSpace } from 'antd-mobile';
-import imgg from '../img/17897476920171115222513092_178974769.jpg'
+import img from '../img/17897476920171115222513092_178974769.jpg'
 import imgs from '../img/mv.jpg'
 import ii from '../img/login.jpg'
 import im from '../img/highlightfeature_1960x1102_PC_01.jpg'
@@ -12,15 +12,16 @@ const tabs = [
     { title: '专辑' },
 ];
 
-const TabExamplea = () => (
+const TabExample = () => (
     <div>
+        <WhiteSpace />
         <Tabs tabs={tabs} initialPage={0} animated={false} useOnPan={false}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', backgroundColor: '#fff' }}>
                 <div>
                      <div className="ccc">
                             <a href="###">
                                 <i>
-                                    <img src={imgg} alt="" />
+                                    <img src={img} alt="" />
                                 </i>
                             </a>
                             <a href="###">
@@ -55,7 +56,7 @@ const TabExamplea = () => (
                             </a>
                             <a href="###">
                                 <i>
-                                    <img src={imgg} alt="" />
+                                    <img src={img} alt="" />
                                 </i>
                             </a>
                             <a href="###">
@@ -110,7 +111,7 @@ const TabExamplea = () => (
                             </a>
                             <a href="###">
                                 <i>
-                                    <img src={imgg} alt="" />
+                                    <img src={img} alt="" />
                                 </i>
                             </a>
                             <a href="###">
@@ -194,7 +195,7 @@ const TabExamplea = () => (
                                 </a>
                                 <a href="###">
                                     <li>
-                                        <img src={imgg} alt="" />
+                                        <img src={img} alt="" />
                                     <dl>
                                         <dt>手机摄影图片精选</dt>
                                         <dd>POCO 摄影社区</dd>
@@ -210,4 +211,4 @@ const TabExamplea = () => (
     </div>
 );
 
-export default TabExamplea;
+export default TabExample;

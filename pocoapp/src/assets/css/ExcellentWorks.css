@@ -1,9 +1,10 @@
 .sub-title {
     background: #ffffff;
 }
+.not-square-grid .am-grid-icon {
+    width: 3.75rem;
+    height: 3.75rem;
+}
 .am-grid.am-grid-square .am-grid-item .am-grid-item-inner-content .am-grid-icon {
-    margin: 0;
-    width: 99%!important;
-    opacity: 1;
-    display: block;
+    width: 100%!important;
 }
