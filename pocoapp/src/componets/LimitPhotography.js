@@ -30,7 +30,7 @@ const TabExample = () => (
                             <i>
                                 <img src={img} />
                             </i>
-                            <h3>每周摄影师推荐Vol.23——关顺志/Ken Kwan</h3>
+                            <h3>每周摄影师推荐Vol.23——关顺志A/Ken Kwan</h3>
                             <span>2017-12-19</span>
                         </a>
                         <a src="###">
