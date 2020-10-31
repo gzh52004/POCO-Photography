@@ -14,6 +14,12 @@ function reg(data) {
       ...data,  
     });
   }
+//3.登录
+function login(data){
+  return request.get("/user/login",{
+    ...data,
+  })
+}
   // 7.获取用户列表信息(包含模糊查询)
 function getUserData(data) {
     return request.get("/user/list", {
@@ -27,4 +33,5 @@ function getUserData(data) {
     checkname,
     getUserData,
     reg,
+    login,
   }
