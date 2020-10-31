@@ -1,6 +1,6 @@
 import React from 'react';
 import { List } from 'antd-mobile';
-import '../../assets/css/Recommend.css';
+import '../../assets/css/Home/Recommend.css';
 // import request from '../../utils/request';
 
 const Item = List.Item;

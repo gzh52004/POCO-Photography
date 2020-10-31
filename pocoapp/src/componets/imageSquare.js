@@ -7,13 +7,16 @@ import ls from '../img/G-CLASS-BANNER-PC.jpg'
 import gg from '../img/clasbkvpc.jpg'
 import '../assets/css/imageSquare.css'
 
+import '.././assets/css/buju.css'
+
 const tabs = [
     { title: '热门' },
     { title: '专辑' },
 ];
 
-const TabExamplea = () => (
+const TabExample = () => (
     <div>
+        <WhiteSpace />
         <Tabs tabs={tabs} initialPage={0} animated={false} useOnPan={false}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', backgroundColor: '#fff' }}>
                 <div>
@@ -210,4 +213,4 @@ const TabExamplea = () => (
     </div>
 );
 
-export default TabExamplea;
+export default TabExample;

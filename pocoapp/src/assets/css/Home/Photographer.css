@@ -9,7 +9,7 @@
 .photographerBox{
     background-color: #ffffff;
 }
-.sub-title {
+.item-title {
     flex: 1;
     color: #000;
     font-size: 15px;
@@ -87,7 +87,7 @@
     height: 14px;
     background-repeat: no-repeat;
     background-size: contain;
-    background: url('../../assets/data/HomeData/photographer/verified_icon.png') no-repeat 0/14px;
+    background: url('../../data/HomeData/photographer/verified_icon.png') no-repeat 0/14px;
 }
 .txt{
     color: #aaa;
@@ -102,6 +102,6 @@
     display: flex;
 } */
 .shuiyin{
-    background: url('../data/HomeData/photographer/shuiyin.png') no-repeat center center #eee;
+    background: url('../../data/HomeData/photographer/shuiyin.png') no-repeat center center #eee;
     background-size: 0.862rem;
 }

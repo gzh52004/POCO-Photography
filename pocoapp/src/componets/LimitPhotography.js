@@ -6,6 +6,7 @@ import ii from '../img/login.jpg'
 import im from '../img/highlightfeature_1960x1102_PC_01.jpg'
 import ls from '../img/G-CLASS-BANNER-PC.jpg'
 import gg from '../img/clasbkvpc.jpg'
+import '../assets/css/buju.css';
 
 const tabs = [
     { title: '全部' },
@@ -21,7 +22,6 @@ const tabs = [
 
 const TabExampl = () => (
     <div>
-        <WhiteSpace>
         <Tabs tabs={tabs} initialPage={0} animated={false} useOnPan={false}>
             <div style={{ backgroundColor: '#fff' }}>
                 <div className="aaa">
@@ -153,7 +153,7 @@ const TabExampl = () => (
                     </a>
                 </div>
             </div>
-            <div style={{backgroundColor: '#fff'}}>
+            <div style={{ backgroundColor: '#fff' }}>
                 <div className="bbb">
                     <a src="" href="">
                         <p>
@@ -1064,7 +1064,7 @@ const TabExampl = () => (
                 </div>
             </div>
         </Tabs>
-        </WhiteSpace>
+        <WhiteSpace />
     </div>
 );
 

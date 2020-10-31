@@ -1,26 +1,25 @@
 import React from 'react';
 import { Icon,SearchBar} from 'antd-mobile';
-import TabExampls from  '../../componets/PhotographyTechnique.js'
+import TabExampl from  '../../componets/LimitPhotography.js'
 
-
-function PhotographyTechnique(){
-    // 摄影技巧
+function LimitPhotography(){
+    // 极限摄影
     return(
         <div>
-            <div className="header">
+            <div className="header-cent">
                 <div>{<Icon type="ellipsis" />}</div>
-                <div>摄影技巧</div>
+                <div>极限摄影</div>
                 <div></div>
             </div>
             <div className="content">
                 <div className="content-con">
                   {/* 内容 */}
                   <SearchBar defaultValue="请输入搜索"/>
-                   <TabExampls />
+                   <TabExampl />
                 </div>
             </div>
         </div>
     )
 }
 
-export default PhotographyTechnique
+export default LimitPhotography
