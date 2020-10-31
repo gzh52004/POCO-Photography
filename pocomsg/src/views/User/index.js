@@ -4,30 +4,23 @@ import { Table, Switch, Radio, Form, Space } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import userAPI from '../../api/userAPI';
 
+// "_id" : ObjectId("5f9cdb178eaa5d6100db9b0f"),
+// "uid" : "460000198704065323",
+// "username" : "1234567",
+// "password" : "8bb0cf6eb9b17d0f7d22b456f121257dc1254e1f01665370476383ea776df414",
+// "regtime" : "2020-10-31 11:33:43"
 const columns = [
   {
+    title: 'ID',
+    dataIndex: 'uid',
+  },
+  {
     title: '用户名',
-    dataIndex: 'name',
+    dataIndex: 'username',
   },
   {
-    title: '年龄',
-    dataIndex: 'age',
-    sorter: (a, b) => a.age - b.age,
-  },
-  {
-    title: '地址',
-    dataIndex: 'address',
-    filters: [
-      {
-        text: 'London',
-        value: 'London',
-      },
-      {
-        text: 'New York',
-        value: 'New York',
-      },
-    ],
-    onFilter: (value, record) => record.address.indexOf(value) === 0,
+    title: '注册时间',
+    dataIndex: 'regtime',
   },
   {
     title: '操作',
@@ -40,8 +33,7 @@ const columns = [
     ),
   },
 ];
-
-const dataSource =[];
+// let  dataSource = [{username:12345}];
 // for (let i = 1; i <= 10; i++) {
 //   dataSource.push({
 //     key: i,
@@ -67,6 +59,8 @@ class User extends React.Component {
     tableLayout: undefined,
     top: 'none',
     bottom: 'bottomCenter',
+    dataSource : []
+
   };
 
   handleToggle = prop => enable => {
@@ -108,16 +102,18 @@ class User extends React.Component {
   handleDataChange = hasData => {
     this.setState({ hasData });
   };
+  
   datalist() {
       userAPI.getUserData().then(res=>{
         console.log(res.data.data.rows)
-        this.setState({
-          dataSource:res.data.data.rows
-        })
+        this.dataSource=res.data.data.rows
       })
   }
   componentDidMount(){
     this.datalist()
+}
+componentDidUpdate(){
+  this.datalist()
 }
   render() {
     const { xScroll, yScroll, ...state } = this.state;
@@ -171,7 +167,7 @@ class User extends React.Component {
           {...this.state}
           pagination={{ position: [this.state.top, this.state.bottom] }}
           columns={tableColumns}
-          dataSource={state.hasData ? dataSource : null}
+          dataSource={state.hasData ? this.dataSource : null}
           scroll={scroll}
         />
       </>
