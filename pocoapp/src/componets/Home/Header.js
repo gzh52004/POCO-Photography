@@ -1,7 +1,7 @@
 import React from 'react'
 import { Drawer, List, NavBar, Icon } from 'antd-mobile';
-import '../assets/css/Header.css';
-class App1 extends React.Component {
+import '../../assets/css/Header.css';
+class Header extends React.Component {
   state = {
     open: false,
   }
@@ -41,11 +41,11 @@ class App1 extends React.Component {
         open={this.state.open}
         onOpenChange={this.onOpenChange}
       >
-       rrr
+       抽屉
       </Drawer>
     </div>);
     
   }
 }
 
-export default App1;
+export default Header;
