@@ -14,7 +14,7 @@
 /* 遮罩层 */
 .am-drawer-overlay{
   display: block;
-  z-index: 4;
+  z-index: 3;
 }
 /* 抽屉 */
 .my-drawer {
