@@ -27,7 +27,7 @@ const data = Array.from(new Array(3)).map(() => ({
 const Photographer = () => (
   <div>
     <div className="photographerBox">
-      <div className="sub-title">热门摄影师</div>
+      <div className="item-title">热门摄影师</div>
       <div className="item">
         <div className="personCard">
           <div className="personHead">

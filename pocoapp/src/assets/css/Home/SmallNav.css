@@ -19,6 +19,7 @@
     background-size: cover;
 }
 .list li .txt{
+    color: #000000;
     padding-top: 0.09rem;
     font-size: 0.262rem;
 }

@@ -8,7 +8,7 @@ const data = Array.from(new Array(6)).map(() => ({
 
 const ExcellentWorks = () => (
   <div>
-    <div className="sub-title">勋章作品</div>
+    <div className="item-title">勋章作品</div>
       <Grid data={data} columnNum={2} itemStyle={{ height: '140px' }} />
   </div>
   );
