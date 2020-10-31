@@ -77,6 +77,10 @@
   padding: 0 30px;
   height: 45px;
 }
+.my-drawer ul li a{
+  text-decoration: none;
+  color: #ffffff;
+}
 
 /* 底部下载链接 */
 .listfooter{
