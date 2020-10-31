@@ -12,14 +12,17 @@ import userAPI from '../../api/userAPI';
 const columns = [
   {
     title: 'ID',
+    key:"uid",
     dataIndex: 'uid',
   },
   {
     title: '用户名',
+    key:"username",
     dataIndex: 'username',
   },
   {
     title: '注册时间',
+    key:"regtime",
     dataIndex: 'regtime',
   },
   {
@@ -103,21 +106,26 @@ class User extends React.Component {
     this.setState({ hasData });
   };
   
-  datalist() {
-      userAPI.getUserData().then(res=>{
-        console.log(res.data.data.rows)
-        this.dataSource=res.data.data.rows
-      })
+  async datalist() {
+      // userAPI.getUserData().then(res=>{
+      //   this.state.dataSource=res.data.data.rows
+      //   console.log(88,this.state.dataSource);
+      // })
+      const data=await userAPI.getUserData()
+      this.setState({
+        dataSource:data.data.data.rows
+      })  
   }
-  componentDidMount(){
+
+  async componentDidMount(){
     this.datalist()
-}
-componentDidUpdate(){
-  this.datalist()
-}
+  }
+  componentDidUpdate(){
+    this.datalist()
+  }
+
   render() {
     const { xScroll, yScroll, ...state } = this.state;
-
     const scroll = {};
     if (yScroll) {
       scroll.y = 240;
@@ -167,7 +175,8 @@ componentDidUpdate(){
           {...this.state}
           pagination={{ position: [this.state.top, this.state.bottom] }}
           columns={tableColumns}
-          dataSource={state.hasData ? this.dataSource : null}
+          dataSource={state.hasData ? this.state.dataSource : null}
+          // dataSource={this.state.dataSource}
           scroll={scroll}
         />
       </>
