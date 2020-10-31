@@ -42,15 +42,15 @@ const columns = [
 ];
 
 const dataSource =[];
-for (let i = 1; i <= 10; i++) {
-  dataSource.push({
-    key: i,
-    name: 'John Brown',
-    age: `${i}2`,
-    address: `New York No. ${i} Lake Park`,
-    description: `My name is John Brown, I am ${i}2 years old, living in New York No. ${i} Lake Park.`,
-  });
-}
+// for (let i = 1; i <= 10; i++) {
+//   dataSource.push({
+//     key: i,
+//     name: 'John Brown',
+//     age: `${i}2`,
+//     address: `New York No. ${i} Lake Park`,
+//     description: `My name is John Brown, I am ${i}2 years old, living in New York No. ${i} Lake Park.`,
+//   });
+// }
 
 const expandable = { expandedRowRender: record => <p>{record.description}</p> };
 const showHeader = true;
@@ -110,8 +110,9 @@ class User extends React.Component {
   };
   datalist() {
       userAPI.getUserData().then(res=>{
+        console.log(res.data.data.rows)
         this.setState({
-          dataSource:res.data.rows
+          dataSource:res.data.data.rows
         })
       })
   }
