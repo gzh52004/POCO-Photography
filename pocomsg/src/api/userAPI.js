@@ -11,7 +11,7 @@ function checkname(username) {
 // 2.注册
 function reg(data) {
     return request.post("/user/reg", {
-      ...data,
+      ...data,  
     });
   }
   // 7.获取用户列表信息(包含模糊查询)

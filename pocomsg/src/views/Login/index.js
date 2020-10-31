@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form, Input, Button, Checkbox, message } from 'antd';
-import SHA256 from 'crypto-js/sha256';console.dir(SHA256)
+import SHA256 from 'crypto-js/sha256';
 
 import request from '../../utils/request';
 
