@@ -38,6 +38,7 @@
 }
 .am-drawer-sidebar {
   width: 6.375rem;
+  height: 100%;
 }
 /* 顶部标题 */
 .am-navbar-title {
@@ -47,7 +48,10 @@
 .am-list-item .am-list-line {
   align-self: unset;
 }
-
+/* 消除导航列表边线 */
+.am-list-body{
+  background: none;
+}
 .my-drawer ul li,.texttop{
   height: 45px;
   background-color: #303031;
@@ -84,7 +88,7 @@
 
 /* 底部下载链接 */
 .listfooter{
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   height: 55px;

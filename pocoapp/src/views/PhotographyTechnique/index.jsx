@@ -6,7 +6,7 @@ function LimitPhotography(){
     // 极限摄影
     return(
         <div>
-            <div className="header">
+            <div className="header-cent">
                 <div>{<Icon type="ellipsis" />}</div>
                 <div>极限摄影</div>
                 <div></div>
