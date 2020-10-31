@@ -24,7 +24,6 @@
   .am-search-input{
     border: 0.01rem solid #f5f5f5;
     border-radius: 1rem;
-    background: #ccc;
   }
   .am-search-input .am-search-synthetic-ph-icon{
       background-image: none;
