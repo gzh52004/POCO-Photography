@@ -1,25 +1,25 @@
 import { Tabs, WhiteSpace } from 'antd-mobile';
-import '../assets/css/LimitPhotography.css'
 import img from '../img/17897476920171115222513092_178974769.jpg'
 import imgs from '../img/mv.jpg'
 import ii from '../img/login.jpg'
 import im from '../img/highlightfeature_1960x1102_PC_01.jpg'
 import ls from '../img/G-CLASS-BANNER-PC.jpg'
 import gg from '../img/clasbkvpc.jpg'
+import '../assets/css/PhotographyTechnique.css'
 
 const tabs = [
     { title: '全部' },
-    { title: '新手入门' },
-    { title: '使用技巧' },
-    { title: '环球视觉' },
-    { title: '摄影大赛' },
-    { title: '每周推荐' },
-    { title: '全球百人计划' },
-    { title: '器材咨询' },
+    { title: '基础理论' },
+    { title: '实战技巧' },
+    { title: '分享探讨' },
+    { title: '心得点评' },
+    { title: '摄影器材' },
+    { title: '摄影咨询' },
+    { title: '专栏专题' },
 
 ];
 
-const TabExampl = () => (
+const TabExampls = () => (
     <div>
         <Tabs tabs={tabs} initialPage={0} animated={false} useOnPan={false}>
             <div style={{ backgroundColor: '#fff' }}>
@@ -1067,4 +1067,4 @@ const TabExampl = () => (
     </div>
 );
 
-export default TabExampl;
+export default TabExampls;

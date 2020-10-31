@@ -1,0 +1,48 @@
+.content-con{
+    background:#fff;
+}
+.am-whitespace.am-whitespace-md{
+    height: .01rem;
+}
+.am-tabs-default-bar-tab{
+    font-size: 12px;
+}
+.am-tabs-horizontal .am-tabs-pane-wrap-active {
+    padding-top: .2rem;
+}
+/* 内容 */
+.recommend{
+    display: block;
+}
+.recommend-con{
+    width: 49.9%;
+    height: 2.99rem;
+    float: left;
+    display: block;
+    padding: .01rem;
+}
+.recommend-con>img{
+    width: 100%;
+    height: 100%;
+}
+.recommend dl{
+    width: 3.5rem;
+    height: .5rem;
+    margin-top: -.7rem;
+}
+.recommend dl dt{
+    font-size: .05rem;
+    color: #fff;
+    margin: 0 0 0.2rem 1rem;
+}
+.recommend dl dd{
+    width: .5rem;
+    height: .5rem;
+    margin-top: -.5rem;
+}
+.recommend dl img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    margin-left: .3rem;
+}

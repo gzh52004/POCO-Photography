@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon } from 'antd-mobile';
+import { Icon,SearchBar} from 'antd-mobile';
 import TabExampl from  '../../componets/LimitPhotography.js'
 
 function LimitPhotography(){
@@ -14,6 +14,7 @@ function LimitPhotography(){
             <div className="content">
                 <div className="content-con">
                   {/* 内容 */}
+                  <SearchBar defaultValue="请输入搜索"/>
                    <TabExampl />
                 </div>
             </div>
