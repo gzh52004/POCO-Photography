@@ -1,6 +1,6 @@
 import React from 'react';
 import { Carousel, WingBlank } from 'antd-mobile';
-import '../../assets/css/Banner.css';
+import '../../assets/css/Home/Banner.css';
 
 class Banner extends React.Component{
     state = {

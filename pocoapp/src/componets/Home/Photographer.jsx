@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid } from 'antd-mobile';
-import '../../assets/css/Photographer.css';
+import '../../assets/css/Home/Photographer.css';
 
 // const data=Array.from(new Array(3)).map(() =>([
 //   {

@@ -9,7 +9,7 @@ import LimitPhotography from '../../views/LimitPhotography';
 import Identification from '../../views/Identification';
 import PhotographyTechnique from '../../views/PhotographyTechnique';
 import ImageSquare from '../../views/ImageSquare';
-import '../../assets/css/Panel.css';
+import '../../assets/css/Home/Panel.css';
 
 class Panel extends React.Component {
     

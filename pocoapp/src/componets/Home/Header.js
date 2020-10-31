@@ -1,6 +1,6 @@
 import React from 'react'
 import { Drawer, List, NavBar, Icon } from 'antd-mobile';
-import '../../assets/css/Header.css';
+import '../../assets/css/Home/Header.css';
 class Header extends React.Component {
   state = {
     open: false,
@@ -41,6 +41,12 @@ class Header extends React.Component {
         open={this.state.open}
         onOpenChange={this.onOpenChange}
       >
+       抽屉
+       抽屉
+       抽屉
+       抽屉
+       抽屉
+       抽屉
        抽屉
       </Drawer>
     </div>);

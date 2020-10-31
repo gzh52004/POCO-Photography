@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assets/css/SmallNav.css';
+import '../../assets/css/Home/SmallNav.css';
 
 // const data = [
 //     {
