@@ -13,6 +13,7 @@
 } */
 /* 遮罩层 */
 .am-drawer-overlay{
+  position: fixed;
   display: block;
   z-index: 3;
 }
@@ -25,6 +26,7 @@
 }
 /* 抽屉 */
 .my-drawer .am-drawer-sidebar {
+  position: fixed;
   background-color: #303031;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
