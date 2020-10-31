@@ -2,7 +2,7 @@ import React from 'react';
 import {Route,Switch} from 'react-router-dom';
 
 import Home from './views/Home';
-import Mine from './views/Mine/';
+import Mine from './views/Mine/index.jsx';
 import Talks from './views/Talks';
 import Works from './views/Works';
 import LimitPhotography from './views/LimitPhotography';

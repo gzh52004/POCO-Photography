@@ -21,7 +21,7 @@ import '../../assets/css/Home/Photographer.css';
 // ]));
 
 const data = Array.from(new Array(3)).map(() => ({
-  icon:'https://pic3.pocoimg.cn/image/poco/works/55/2020/1029/13/16039494628956804_200213811.jpg?imageView2/1/w/240/h/240/q/95&',
+  icon:'https://pic3.pocoimg.cn/image/poco/works/44/2020/1031/07/16041006801397880_200213811.jpg?imageView2/1/w/240/h/240/q/95&',
 }));
 
 const Photographer = () => (
@@ -55,16 +55,16 @@ const Photographer = () => (
         <div className="personCard">
           <div className="personHead">
             <a className="personImg">
-              <img src="https://pic3.pocoimg.cn/image/poco/avatar/30/20021/200213811_1519144405_53416.jpg" />
+              <img src="https://pic3.pocoimg.cn/image/poco/avatar/81/4648/46480999_1514322418_21996.jpg" />
             </a>
             <a>
               <div className="personInfo">
-                <span className="userName">清溪</span>
+                <span className="userName">Hc</span>
                 <span className="verified">
                   <i>自由摄影师</i>
                 </span>
               </div>
-              <i className="txt">流水不争先</i>
+              <i className="txt">简单、随心</i>
             </a>
           </div>
           <ul className="list clearfix"></ul>
@@ -76,16 +76,16 @@ const Photographer = () => (
         <div className="personCard">
           <div className="personHead">
             <a className="personImg">
-              <img src="https://pic3.pocoimg.cn/image/poco/avatar/30/20021/200213811_1519144405_53416.jpg" />
+              <img src="https://pic3.pocoimg.cn/image/poco/avatar/85/20144/201441548_1594793177_48998.jpg" />
             </a>
             <a>
               <div className="personInfo">
-                <span className="userName">清溪</span>
+                <span className="userName">黑摄会女青年</span>
                 <span className="verified">
                   <i>自由摄影师</i>
                 </span>
               </div>
-              <i className="txt">流水不争先</i>
+              <i className="txt">这个家伙很懒，什么都没有写</i>
             </a>
           </div>
           <ul className="list clearfix"></ul>

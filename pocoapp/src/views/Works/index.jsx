@@ -1,7 +1,9 @@
 import React from 'react';
-class Works extends React.Component{
-       
-    
+
+function Works(){
+    return(
+        <div>Works</div>
+    )
 }
 
-export default Works    
+export default Works

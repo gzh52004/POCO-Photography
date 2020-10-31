@@ -3,7 +3,7 @@ import { Grid } from 'antd-mobile';
 import '../../assets/css/Home/ExcellentWorks.css';
 
 const data = Array.from(new Array(6)).map(() => ({
-  icon: 'https://pic3.pocoimg.cn/image/poco/works/14/2020/1017/00/16028642914834960_65998947.jpg?imageView2/1/w/360/h/360/q/95&',
+  icon: 'https://pic3.pocoimg.cn/image/poco/works/67/2020/1030/06/16040111308859252_201460307.jpg?imageView2/1/w/360/h/360/q/95&',
 }));
 
 const ExcellentWorks = () => (
