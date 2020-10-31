@@ -19,14 +19,17 @@ let addMenu=({key})=>{
    current=key
  }
 
+ function goto(path){
+  props.history.push(path)
+ }
   return (
     <div className="App">
     <Layout>
         <Sider trigger={null}>
           <div className="logo" style={{height:60,lineHeight:4}}>
             <React.Fragment>
-            <Button type="link" >注册</Button>
-            <Button type="link" >登录</Button>
+            <Button type="link" onClick={goto.bind(null,'/Reg')} >注册</Button>
+            <Button type="link" onClick={goto.bind(null,'/Login')}>登录</Button>
             {/* <Button type="link" onClick={dl}>登录</Button> */}
             </React.Fragment>
           </div>
@@ -55,7 +58,7 @@ let addMenu=({key})=>{
             style={{
               margin: '24px 16px',
               padding: 24,
-              minHeight:530,  
+              minHeight:550,  
             }}
           >
         <Switch>

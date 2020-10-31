@@ -1,0 +1,31 @@
+{
+  "name": "h52004_homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/h52004/h52004_homework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.5",
+    "iconv-lite": "^0.6.2",
+    "jsonwebtoken": "^8.5.1",
+    "mockjs": "^1.1.0",
+    "moment": "^2.27.0",
+    "mongodb": "^3.6.1",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1",
+    "request": "^2.88.2",
+    "vue": "^2.6.12"
+  }
+}

@@ -21,6 +21,7 @@ const tabs = [
 
 const TabExampl = () => (
     <div>
+        <WhiteSpace>
         <Tabs tabs={tabs} initialPage={0} animated={false} useOnPan={false}>
             <div style={{ backgroundColor: '#fff' }}>
                 <div className="aaa">
@@ -152,7 +153,7 @@ const TabExampl = () => (
                     </a>
                 </div>
             </div>
-            <div style={{ backgroundColor: '#fff' }}>
+            <div style={{backgroundColor: '#fff'}}>
                 <div className="bbb">
                     <a src="" href="">
                         <p>
@@ -1063,7 +1064,7 @@ const TabExampl = () => (
                 </div>
             </div>
         </Tabs>
-        <WhiteSpace />
+        </WhiteSpace>
     </div>
 );
 
