@@ -60,6 +60,13 @@
   font-size: 15px;
   color: #ffffff;
 }
+.my-drawer ul li img{
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  vertical-align: text-bottom;
+  margin-right: 15px;
+}
 .texttop{
   display: block;
   padding: 0.281rem;
@@ -95,9 +102,28 @@
   bottom: 0;
   height: 55px;
   width: 100%;
-  background: #303031;
 }
-.listfooterImg{
+.listfooter a{
+  display: block;
+  margin-left: 30px;
+  padding: 5px 0 8px;
+  height: 36px;
+  border-top: 1px solid #282829;
+  line-height: 36px;
+  /* text-align: right; */
+  vertical-align: middle;
+}
+.listfooter img{
+  display: inline-block;
+  height: 36px;
+}
+.listfooter a go-icon{
+  display: inline-block;
+  width: 6px;
+  height: 10px;
+  margin-right: 20px;
+}
+/* .listfooterImg{
   display: block;
   margin-left: 30px;
   padding: 5px 0 8px;
@@ -106,5 +132,5 @@
   border-top: 1px solid #282829;
   line-height: 36px;
   text-align: right;
-  background: url('../../data/HomeData/list/downloaad.png') no-repeat left center;
-}
+  background: url('../../data/HomeData/list/download.png') no-repeat left center;
+} */
