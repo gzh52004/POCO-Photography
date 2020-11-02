@@ -134,7 +134,7 @@ html:not([data-scale]) .am-list-body::after {
   height: 36px;
 }
 .listfooter a img.go-icon{
-  display: inline-block;
+  display: block;
   width: 6px;
   height: 10px;
   margin-right: 20px;
