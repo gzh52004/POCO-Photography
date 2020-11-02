@@ -1,12 +1,13 @@
 import React from 'react';
-import { Icon } from 'antd-mobile';
-import TabExample from  '../../componets/LimitPhotography.js'
+import { Icon,SearchBar} from 'antd-mobile';
+import TabExampl from  '../../componets/LimitPhotography.js'
+import '../../assets/css/buju.css';
 
 function LimitPhotography(){
     // 极限摄影
     return(
         <div>
-            <div className="header">
+            <div className="header-cent">
                 <div>{<Icon type="ellipsis" />}</div>
                 <div>极限摄影</div>
                 <div></div>
@@ -14,7 +15,8 @@ function LimitPhotography(){
             <div className="content">
                 <div className="content-con">
                   {/* 内容 */}
-                   <TabExample />
+                  <SearchBar defaultValue="请输入搜索"/>
+                   <TabExampl />
                 </div>
             </div>
         </div>

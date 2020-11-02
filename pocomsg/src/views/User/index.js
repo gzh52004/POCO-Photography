@@ -2,31 +2,28 @@ import React from 'react';
 
 import { Table, Switch, Radio, Form, Space } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
+import userAPI from '../../api/userAPI';
 
+// "_id" : ObjectId("5f9cdb178eaa5d6100db9b0f"),
+// "uid" : "460000198704065323",
+// "username" : "1234567",
+// "password" : "8bb0cf6eb9b17d0f7d22b456f121257dc1254e1f01665370476383ea776df414",
+// "regtime" : "2020-10-31 11:33:43"
 const columns = [
   {
+    title: 'ID',
+    key:"uid",
+    dataIndex: 'uid',
+  },
+  {
     title: '用户名',
-    dataIndex: 'name',
+    key:"username",
+    dataIndex: 'username',
   },
   {
-    title: '年龄',
-    dataIndex: 'age',
-    sorter: (a, b) => a.age - b.age,
-  },
-  {
-    title: '地址',
-    dataIndex: 'address',
-    filters: [
-      {
-        text: 'London',
-        value: 'London',
-      },
-      {
-        text: 'New York',
-        value: 'New York',
-      },
-    ],
-    onFilter: (value, record) => record.address.indexOf(value) === 0,
+    title: '注册时间',
+    key:"regtime",
+    dataIndex: 'regtime',
   },
   {
     title: '操作',
@@ -34,25 +31,21 @@ const columns = [
     sorter: true,
     render: () => (
       <Space size="middle">
-        <a>删除</a>
-        <a className="ant-dropdown-link">
-          更多操作 <DownOutlined />
-        </a>
+        <button>删除</button>
       </Space>
     ),
   },
 ];
-
-const data = [];
-for (let i = 1; i <= 50; i++) {
-  data.push({
-    key: i,
-    name: 'John Brown',
-    age: `${i}2`,
-    address: `New York No. ${i} Lake Park`,
-    description: `My name is John Brown, I am ${i}2 years old, living in New York No. ${i} Lake Park.`,
-  });
-}
+// let  dataSource = [{username:12345}];
+// for (let i = 1; i <= 10; i++) {
+//   dataSource.push({
+//     key: i,
+//     name: 'John Brown',
+//     age: `${i}2`,
+//     address: `New York No. ${i} Lake Park`,
+//     description: `My name is John Brown, I am ${i}2 years old, living in New York No. ${i} Lake Park.`,
+//   });
+// }
 
 const expandable = { expandedRowRender: record => <p>{record.description}</p> };
 const showHeader = true;
@@ -69,6 +62,8 @@ class User extends React.Component {
     tableLayout: undefined,
     top: 'none',
     bottom: 'bottomCenter',
+    dataSource : []
+
   };
 
   handleToggle = prop => enable => {
@@ -110,10 +105,27 @@ class User extends React.Component {
   handleDataChange = hasData => {
     this.setState({ hasData });
   };
+  
+  async datalist() {
+      // userAPI.getUserData().then(res=>{
+      //   this.state.dataSource=res.data.data.rows
+      //   console.log(88,this.state.dataSource);
+      // })
+      const data=await userAPI.getUserData()
+      this.setState({
+        dataSource:data.data.data.rows
+      })  
+  }
+
+  async componentDidMount(){
+    this.datalist()
+  }
+  componentDidUpdate(){
+    this.datalist()
+  }
 
   render() {
     const { xScroll, yScroll, ...state } = this.state;
-
     const scroll = {};
     if (yScroll) {
       scroll.y = 240;
@@ -163,7 +175,8 @@ class User extends React.Component {
           {...this.state}
           pagination={{ position: [this.state.top, this.state.bottom] }}
           columns={tableColumns}
-          dataSource={state.hasData ? data : null}
+          dataSource={state.hasData ? this.state.dataSource : null}
+          // dataSource={this.state.dataSource}
           scroll={scroll}
         />
       </>
@@ -171,15 +184,5 @@ class User extends React.Component {
   }
 }
 
-// ReactDOM.render(<User />, mountNode);
-
-
-// function User(){
-//     return(
-//         <div>
-
-//         </div>
-//     )
-// }
 
 export default User;

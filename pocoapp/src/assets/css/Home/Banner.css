@@ -1,0 +1,24 @@
+.am-wingblank.am-wingblank-lg {
+    margin-left: 0;
+    margin-right: 0;
+}
+/* 消除轮播图与下方小导航的默认间隔 */
+.slider-slide a{
+    font-size: 0;
+}
+/* 轮播图小圆点位置 */
+.am-carousel-wrap{
+    padding: 7px;
+}
+.slider-decorator-0 .am-carousel-wrap .am-carousel-wrap-dot > span{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+    border: 2px solid #fff;
+    background: rgba(0, 0, 0, 0);
+}
+/* 需要给小圆点设置className='thisspan'让当前的小圆点背景色为白色 */
+/* .am-carousel-wrap-dot > span .thisspan{
+    background: #ffffff;
+} */

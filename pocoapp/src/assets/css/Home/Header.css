@@ -11,13 +11,11 @@
   line-height: 30px;
   width: 100%;
 } */
-.am-navbar{
-  z-index: 0;
-}
 /* 遮罩层 */
 .am-drawer-overlay{
+  position: fixed;
   display: block;
-  z-index: 4;
+  z-index: 3;
 }
 /* 抽屉 */
 .my-drawer {
@@ -26,8 +24,10 @@
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
-
+/* 抽屉 */
 .my-drawer .am-drawer-sidebar {
+  position: fixed;
+  background-color: #303031;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -40,17 +40,19 @@
 }
 .am-drawer-sidebar {
   width: 6.375rem;
+  height: 100%;
 }
+/* 顶部标题 */
 .am-navbar-title {
   font-size: 18px;
 }
+/* 导航列表 */
 .am-list-item .am-list-line {
   align-self: unset;
 }
-.my-drawer .am-drawer-sidebar {
-  background-color: #303031;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
+/* 消除导航列表边线 */
+.am-list-body{
+  background: none;
 }
 .my-drawer ul li,.texttop{
   height: 45px;
@@ -58,11 +60,19 @@
   font-size: 15px;
   color: #ffffff;
 }
+.my-drawer ul li img{
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  vertical-align: text-bottom;
+  margin-right: 15px;
+}
 .texttop{
   display: block;
   padding: 0.281rem;
   padding-left: 1.875rem;
   height: 1.687rem;
+  margin-bottom: 0.281rem;
 }
 .texttop .user{
   display: block;
@@ -70,7 +80,7 @@
   float: left;
   width: 1.125rem;
   height: 1.125rem;
-  background: url('../images/user.png') no-repeat 0 0/1.125rem;
+  background: url('../../data/HomeData/list/user.png') no-repeat 0 0/1.125rem;
 }
 .texttop .usertext{
   display: block;
@@ -78,24 +88,60 @@
   line-height: 1.125rem;
 }
 .my-drawer ul li{
-  display: block;
-  width: 100%;
-  height: 100%;
-  line-height: 0.843rem;
-  color: #fff;
-  font-size: 15px;
+  padding: 0 30px;
+  height: 45px;
 }
-
+.my-drawer ul li a{
+  text-decoration: none;
+  color: #ffffff;
+}
+/* 去除白边 */
+html:not([data-scale]) .am-list-body::after {
+    content: '';
+    position: absolute;
+    background-color: #303031;
+    display: block;
+    z-index: 1;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1PX;
+    transform-origin: 50% 100%;
+    transform: scaleY(0.5);
+}
 /* 底部下载链接 */
 .listfooter{
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   height: 55px;
   width: 100%;
-  background: #303031;
 }
-.listfooterImg{
+.listfooter a{
+  display: block;
+  margin-left: 30px;
+  padding: 5px 0 8px;
+  height: 36px;
+  border-top: 1px solid #282829;
+  line-height: 36px;
+  /* text-align: right; */
+  /* vertical-align: middle; */
+}
+.listfooter a img{
+  display: inline-block;
+  height: 36px;
+}
+.listfooter a img.go-icon{
+  display: block;
+  width: 6px;
+  height: 10px;
+  margin-right: 20px;
+  float: right;
+  margin-top: 18px;
+}
+/* .listfooterImg{
   display: block;
   margin-left: 30px;
   padding: 5px 0 8px;
@@ -104,5 +150,5 @@
   border-top: 1px solid #282829;
   line-height: 36px;
   text-align: right;
-  background: url('../images/downloaad.png') no-repeat left center;
-}
+  background: url('../../data/HomeData/list/download.png') no-repeat left center;
+} */

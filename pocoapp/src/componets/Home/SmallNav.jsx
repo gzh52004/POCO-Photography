@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assets/css/SmallNav.css';
+import '../../assets/css/Home/SmallNav.css';
 
 // const data = [
 //     {
@@ -21,16 +21,21 @@ const SmallNav = () => (
         <div className="smlist">
             <ul className="list clearfix">
                 <li>
-                    <img src="https://static-c.pocoimg.cn/project/poco_wap/prod/online/image/page/index/i/icon_work_46fda5e.png" alt=""/>
-                    <div className='txt'>作品</div>
+                    <a href='#/works'>
+                        <img src="https://static-c.pocoimg.cn/project/poco_wap/prod/online/image/page/index/i/icon_work_46fda5e.png" alt=""/>
+                        <div className='txt'>作品</div>
+                    </a>
                 </li>
                 <li>
+                    <a href='#/imagesquare'></a>
                     <img src="https://static-c.pocoimg.cn/project/poco_wap/prod/online/image/page/index/i/icon_skill_ce883b7.png" alt=""/>
                     <div className='txt'>图片</div>
                 </li>
                 <li>
-                    <img src="https://static-c.pocoimg.cn/project/poco_wap/prod/online/image/page/index/i/icon_work_46fda5e.png" alt=""/>
-                    <div className='txt'>技巧</div>
+                    <a href='#/photographytechnique'>
+                        <img src="https://static-c.pocoimg.cn/project/poco_wap/prod/online/image/page/index/i/icon_work_46fda5e.png" alt=""/>
+                        <div className='txt'>技巧</div>
+                    </a>
                 </li>
             </ul>
         </div>
