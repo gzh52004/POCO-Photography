@@ -10,9 +10,13 @@
 .am-carousel-wrap{
     padding: 7px;
 }
-.am-carousel-wrap-dot > span{
+.slider-decorator-0 .am-carousel-wrap .am-carousel-wrap-dot > span{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+    border: 2px solid #fff;
     background: rgba(0, 0, 0, 0);
-    border: 2px solid #ffffff;
 }
 /* 需要给小圆点设置className='thisspan'让当前的小圆点背景色为白色 */
 /* .am-carousel-wrap-dot > span .thisspan{
