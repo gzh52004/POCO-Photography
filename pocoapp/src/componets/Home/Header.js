@@ -1,15 +1,16 @@
 import React from 'react'
 import { Drawer, List, NavBar, Icon } from 'antd-mobile';
 import '../../assets/css/Home/Header.css';
-import home from '../../assets/data/HomeData/list/home.png';
-import works from '../../assets/data/HomeData/list/works.png';
-import photosquare from '../../assets/data/HomeData/list/photosquare.png';
-import skills from '../../assets/data/HomeData/list/skills.png';
-import talks from '../../assets/data/HomeData/list/talks.png';
-import limit from '../../assets/data/HomeData/list/limit.png';
-import verified from '../../assets/data/HomeData/list/verified.png';
-import download from '../../assets/data/HomeData/list/download.png';
-import go from '../../assets/data/HomeData/list/go.png';
+// import home from '../../assets/data/HomeData/list/home.png';
+// import works from '../../assets/data/HomeData/list/works.png';
+// import photosquare from '../../assets/data/HomeData/list/photosquare.png';
+// import skills from '../../assets/data/HomeData/list/skills.png';
+// import talks from '../../assets/data/HomeData/list/talks.png';
+// import limit from '../../assets/data/HomeData/list/limit.png';
+// import verified from '../../assets/data/HomeData/list/verified.png';
+// import download from '../../assets/data/HomeData/list/download.png';
+// import go from '../../assets/data/HomeData/list/go.png';
+import NavList from '../Home/NavList';
 
 class App1 extends React.Component {
   state = {
@@ -24,7 +25,7 @@ class App1 extends React.Component {
   render() {
     // fix in codepen
     const sidebar =( <List>
-      <div className="texttop">
+      {/* <div className="texttop">
         <span className="user"></span>
         <span className="usertext">登录/注册</span>
       </div>
@@ -77,7 +78,8 @@ class App1 extends React.Component {
           <img src={download} />
           <img className='go-icon' src={go} />
         </a>
-        </div>
+        </div> */}
+        <NavList />
     </List>);
 
     // console.log('this.path=',this.path);
