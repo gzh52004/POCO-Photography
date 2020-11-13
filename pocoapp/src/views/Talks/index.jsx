@@ -6,7 +6,7 @@ function Talks(){
     // 对话 Talks
     return(
         <div>
-            <div className="header">
+            <div className="header-cent">
                 <div>{<Icon type="ellipsis" />}</div>
                 <div>对话</div>
                 <div></div>

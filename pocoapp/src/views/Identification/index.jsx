@@ -4,7 +4,7 @@ function Identification(){
     return(
         <div>
             <div>
-           <div className="header">
+           <div className="header-cent">
               
            </div>
             <div className="content">

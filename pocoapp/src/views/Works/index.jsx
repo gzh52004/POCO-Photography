@@ -6,7 +6,7 @@ function Works(){
     // 对话 Works
     return(
         <div>
-            <div className="header">
+            <div className="header-cent">
                 <div>{<Icon type="ellipsis" />}</div>
                 <div>作品</div>
                 <div>分类</div>
